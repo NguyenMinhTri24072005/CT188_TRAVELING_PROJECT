@@ -1,0 +1,81 @@
+.page__main{
+    margin: 0 50px 0 50px;
+    
+}
+.main__h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.main__div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+.div__box{
+    border: 1px solid #00000061;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 350px;
+}
+.icon_contact{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+}
+.div__box{
+    margin: 0;
+  color: #333;
+  font-size: 1rem;
+  position: relative;
+}
+
+.div__box-title{
+    padding-left: 40px ;
+}
+.faq-container {
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.faq-tabs li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.faq-tabs .active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
+.faq-list {
+  display: none;
+  padding: 0.5rem 0;
+}
+
+.faq-list.active {
+  display: block;
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.faq-item span:last-child {
+  font-weight: bold;
+}
+
