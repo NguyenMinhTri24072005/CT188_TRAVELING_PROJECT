@@ -114,10 +114,24 @@
                         <div class="field"><label>Tên công ty<br><input class="text"type="text" placeholder="Nhập vào đây"></label></div>
                         <div class="field"><label>Số khách<br><input class="text"type="text" placeholder="Nhập vào đây"></label></div>
                     </div>
-                    <div class="field full"><label>Địa chỉ<br><input class="input2" type="text" placeholder="Nhập vào đây"></label></div>
+                    <div class="field"><label>Địa chỉ</label> 
+                      <label for="tinh">Tỉnh/Thành:</label>
+                        <select id="tinh"></select>
+                        <br><br>
+                        <label for="huyen">Quận/Huyện:</label>
+                        <select id="huyen"></select>
+                        <br><br>
+                        <label for="xa">Phường/Xã:</label>
+                        <select id="xa"></select>
+                        <br><br>
+                        <label for="sonha">Số nhà, tên đường:</label>
+                        <input type="text" id="sonha" placeholder="VD: 123 Lê Lợi">
+                        <br><br>
+                        <button onclick="hienThiDiaChi()">Xác nhận</button>
+                        <p id="diachi" class="hienthi"></p></div>
                     <div class="field full"><label>Tiêu đề<br><input class="input2"type="text" placeholder="Nhập vào đây"></label></div>
                     <div class="field full"><label >Nội dung<br><textarea class="text-nd" placeholder="Nhập vào đây"></textarea></label></div>
-                    <button class="submit-btn">Gửi đi</button>
+                    <button type="submit" class="submit-btn" id="final">Gửi đi</button>
                 </form>
                 
             </div>
