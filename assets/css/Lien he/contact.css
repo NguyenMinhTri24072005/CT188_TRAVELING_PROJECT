@@ -1,3 +1,4 @@
+/* CHUNG TẤN LỢI ** B236555 */
 .main__contact{
     display: grid;
     grid-template-areas: "main-header" "main-form";
@@ -117,10 +118,12 @@ textarea {
 }
 .main__form{
     margin-top: 100px;
+
 }
 .main__contact {
     display: grid;
     grid-template-areas: "main-header" "main-form";
+  
 }
 
 .main__header {
@@ -182,6 +185,10 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+      background-color: #fff;
+    border:  1px solid #000 ;
+    margin-left: 20px;
+    border-radius: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -224,4 +231,15 @@ textarea {
 .hienthi{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.submit_ad{
+  background: #2ea8ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin-top: 10px;
+  width: 15%;
 }
