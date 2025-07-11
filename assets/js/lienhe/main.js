@@ -1,5 +1,8 @@
+// CHUNG TẤN LỢI ** B2306555
+let tinhSelect, huyenSelect, xaSelect;
+
 document.addEventListener('DOMContentLoaded', () => {
-  // Kích hoạt mặc định tab support
+  // Tab mặc định
   const supportTab = document.querySelector('.main-tabs li[data-tab="support"]');
   const supportContent = document.getElementById('support');
   const contactContent = document.getElementById('contact');
@@ -9,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactContent.classList.remove('actives');
   }
 
-  // Tab chuyển nội dung trong .faq-tabs
+  // Tab FAQ
   const tabs = document.querySelectorAll('.faq-tabs li');
   const lists = document.querySelectorAll('.faq-list');
   tabs.forEach(tab => {
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Tab chính ở .main-tabs
+  // Tab chính
   const tabs1 = document.querySelectorAll('.main-tabs li');
   const lists2 = document.querySelectorAll('.tab-list');
   tabs1.forEach(tab => {
@@ -38,8 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Accordion
-  const acc = document.querySelectorAll(".faq-item");
-  acc.forEach(item => {
+  document.querySelectorAll(".faq-item").forEach(item => {
     item.addEventListener("click", function () {
       this.classList.toggle("active");
       const panel = this.nextElementSibling;
@@ -49,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Hover effects
-  document.querySelectorAll('.div__box, .faq-item').forEach(item => {
+  // Hover box
+  document.querySelectorAll('.div__box, .faq-item, .faq-icon, .div__box-2').forEach(item => {
     item.addEventListener('mouseenter', () => {
       item.style.transform = 'scale(1.05)';
       item.style.transition = 'transform 0.3s ease';
@@ -62,37 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.querySelectorAll('.faq-icon, .div__box-2').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      item.style.transform = 'scale(1.05)';
-      item.style.transition = 'transform 0.3s ease';
-      item.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)';
-    });
-    item.addEventListener('mouseleave', () => {
-      item.style.transform = 'scale(1)';
-      item.style.boxShadow = '0 1px 2px rgba(0,0,0,0.2)';
-    });
-  });
-
-  // Giả sử người dùng đã đăng nhập
-  sessionStorage.setItem('isLoggedIn', 'true');
-  sessionStorage.setItem('fullName', 'Nguyễn Văn A');
-  sessionStorage.setItem('email', 'a@example.com');
-  sessionStorage.setItem('phone', '0123456789');
-
-  // Hiển thị thông tin người dùng nếu đã đăng nhập
+  // Hiển thị thông tin đăng nhập
   if (sessionStorage.getItem('isLoggedIn') === 'true') {
-
     const nameEl = document.getElementById('display-name');
     const emailEl = document.getElementById('display-email');
-    const phoneEl = document.getElementById('display-phone');
-    if (nameEl) nameEl.textContent = sessionStorage.getItem('fullName') || '';
+    if (nameEl) nameEl.textContent = sessionStorage.getItem('name') || '';
     if (emailEl) emailEl.textContent = sessionStorage.getItem('email') || '';
-    if (phoneEl) phoneEl.textContent = sessionStorage.getItem('phone') || '';
   }
 
-  // Xử lý gửi form liên hệ
-   // Xử lý gửi form liên hệ
+  // Xử lý form liên hệ
   const form = document.querySelector('.contact__form form');
   if (form) {
     form.addEventListener('submit', (e) => {
@@ -107,16 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
       let isValid = true;
 
       inputs.forEach(input => {
-        // Xoá thông báo lỗi cũ nếu có
-        
         let errorMsg = input.parentElement.querySelector('.error-msg');
         if (errorMsg) errorMsg.remove();
 
         if (input.value.trim() === '') {
           input.style.border = "2px solid red";
           isValid = false;
-
-          // Tạo thông báo lỗi
           const error = document.createElement('div');
           error.classList.add('error-msg');
           error.style.color = 'red';
@@ -131,16 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (!isValid) return;
 
-      // Nếu hợp lệ
       const thanksBox = document.querySelector('.thanks__box');
       if (thanksBox) thanksBox.style.display = 'block';
       form.reset();
     });
   }
 
-
-
-  // Đóng form cảm ơn
+  // Đóng khung cảm ơn
   const thanksCloseBtn = document.querySelector('.thanks__box button');
   if (thanksCloseBtn) {
     thanksCloseBtn.addEventListener('click', () => {
@@ -149,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Chặn link khi chưa đăng nhập
+  // Bảo vệ liên kết nếu chưa đăng nhập
   document.querySelectorAll('a.box__link, .box-link').forEach(link => {
     link.addEventListener('click', (e) => {
       if (sessionStorage.getItem('isLoggedIn') !== 'true') {
@@ -161,24 +134,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Đóng thông báo login-fail
+  // Nút chuyển hướng đến login
   const loginFailBtn = document.querySelector('.login-fail__button');
   if (loginFailBtn) {
     loginFailBtn.addEventListener('click', () => {
       const loginFailBox = document.querySelector('.login-fail__box');
       if (loginFailBox) {
         loginFailBox.style.display = 'none';
-        window.location.href= 'login.html';
+        window.location.href = 'login.html';
       }
     });
   }
-});
-// Chon dia chi
- const tinhSelect = document.getElementById('tinh');
-    const huyenSelect = document.getElementById('huyen');
-    const xaSelect = document.getElementById('xa');
 
-    // Load danh sách tỉnh
+  // Địa chỉ tỉnh/huyện/xã
+  tinhSelect = document.getElementById('tinh');
+  huyenSelect = document.getElementById('huyen');
+  xaSelect = document.getElementById('xa');
+
+  if (tinhSelect && huyenSelect && xaSelect) {
     fetch('https://provinces.open-api.vn/api/?depth=1')
       .then(res => res.json())
       .then(data => {
@@ -191,7 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
-    // Khi chọn tỉnh → load quận/huyện
     tinhSelect.addEventListener('change', () => {
       const code = tinhSelect.value;
       huyenSelect.innerHTML = '<option value="">-- Chọn quận/huyện --</option>';
@@ -210,7 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Khi chọn huyện → load xã/phường
     huyenSelect.addEventListener('change', () => {
       const code = huyenSelect.value;
       xaSelect.innerHTML = '<option value="">-- Chọn phường/xã --</option>';
@@ -228,18 +199,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Hiển thị địa chỉ
-    function hienThiDiaChi() {
-      const tinh = tinhSelect.options[tinhSelect.selectedIndex].text;
-      const huyen = huyenSelect.options[huyenSelect.selectedIndex].text;
-      const xa = xaSelect.options[xaSelect.selectedIndex].text;
-      const sonha = document.getElementById("sonha").value;
+    xaSelect.addEventListener('change', hienThiDiaChi);
+    const sonhaInput = document.getElementById('sonha');
+    if (sonhaInput) {
+      sonhaInput.addEventListener('input', hienThiDiaChi);
+    }
+  }
+});
 
-      if (!tinh || !huyen || !xa || !sonha) {
-        document.getElementById("diachi").textContent = "Vui lòng nhập đầy đủ địa chỉ.";
-        return;
-      }
+// Hàm hiển thị địa chỉ
+function hienThiDiaChi() {
+  const tinh = tinhSelect?.options[tinhSelect.selectedIndex]?.text || '';
+  const huyen = huyenSelect?.options[huyenSelect.selectedIndex]?.text || '';
+  const xa = xaSelect?.options[xaSelect.selectedIndex]?.text || '';
+  const sonha = document.getElementById("sonha")?.value.trim();
 
-      document.getElementById("diachi").textContent =
-        `Địa chỉ: ${sonha}, ${xa}, ${huyen}, ${tinh}`;
-    } 
+  const diachiEl = document.getElementById("diachi");
+  if (!tinh || !huyen || !xa || !sonha || tinh.includes('Chọn')) {
+    diachiEl.textContent = "Vui lòng nhập đầy đủ địa chỉ.";
+    return;
+  }
+
+  diachiEl.textContent = `Địa chỉ: ${sonha}, ${xa}, ${huyen}, ${tinh}`;
+}
