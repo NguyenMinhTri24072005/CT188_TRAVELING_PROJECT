@@ -41,11 +41,13 @@ function signup(event) {
     alert("Mật khẩu không khớp. Vui lòng nhập lại!");
     return;
   }
-  var check = localStorage.getItem(username);
+  var check = localStorage.getItem(email);
   if (check !== null) {
-    alert("Tài khoản đã tồn tại!");
+    alert("Tài khoản đã tồn tại !");
     usernameInput.classList.add("invalid");
     usernameInput.classList.remove("valid");
+    emailInput.classList.add("invalid");
+    emailInput.classList.remove("valid");
     return;
   }
   var user = {
