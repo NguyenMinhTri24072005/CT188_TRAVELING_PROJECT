@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>WEB_PROJECT</title>
+    <title>CHĂM SÓC KHÁCH HÀNG</title>
   </head>
 
   <body class="page">
@@ -96,11 +96,14 @@
 
     <main class="main">
         <h1 class="main__h1">Chào mừng đến với trung tâm trợ giúp</h1>
+        <!--Tab mặc định-->
         <ul class="main-tabs">
           <li data-tab="support" class="actives faq-icon">Hỗ trợ khách hàng</li>
           <li data-tab="contact" class="faq-icon">Tuyển dụng và đối tác</li>
         </ul>
+        <!--Tab mặc định được chọn đầu tiên là Hỗ trợ khách hàng-->
         <div class="tab-list actives" id="support">
+          <!--Hai box lựa chọn tin nhắn/gọi điện-->
         <div class="main__div">
             <a href="./contact.html" class="box-link">
                 <div class="div__box">
@@ -135,6 +138,7 @@
 
   <!-- Nội dung câu hỏi -->
             <div class="faq-content">
+              <!--Nơi ở-->
                  <div class="faq-list active" id="stay">
                   
                       <button class="faq-item"><span>Hủy phòng</span> <span>›</span></button>
@@ -176,9 +180,8 @@
                     <div class="panel">
                         <p>Việc hoàn tiền có thể sẽ mất 1-2 ngày tùy vào dịch vụ bạn chọn. Xem chi tiết <a href="#">Điều khoản sử dụng</a>.</p>
                       </div>
-      <!-- Thêm các câu hỏi khác -->
                 </div>
-
+<!--Thuê xe-->
             <div class="faq-list active" id="car">
                 <button class="faq-item">
                         <span>Điều kiện thuê xe</span> <span>›</span>
@@ -215,6 +218,7 @@
                         <p>Theo loại xe, thời gian thuê và các dịch vụ đi kèm.</p>
                       </div>
                  </div>
+<!--Chuyến bay-->
                  <div class="faq-list active" id="flight">
                 <button class="faq-item">
                         <span>Giấy tờ xuất trình</span> <span>›</span>
@@ -268,6 +272,7 @@
                 
                  
                  </div>
+  <!--Bảo hiểm-->
                   <div class="faq-list active" id="insurance">
                 <button class="faq-item">
                         <span>Hiệu lực</span> <span>›</span>
@@ -285,6 +290,7 @@
                 
                
                  </div>
+                 <!--Khác-->
                  <div class="faq-list active" id="other">
                 <button class="faq-item">
                         <span>Đổi mật khẩu tài khoản</span> <span>›</span>
@@ -307,6 +313,7 @@
         </div>
         </div>
         </div>
+        <!--Tab tuyển dụng và đối tác-->
         <div class="tab-list actives" id="contact">
           <div class="main__div column">
             <div class="div__box-2">
@@ -337,6 +344,7 @@
             </div>
           </div>
         </div>
+        <!--Box ẩn hiện thi khi user chưa đăng nhập mà click vào bõ phản hồi bằng tin nhắn-->
         <div class="login-fail__box">
           <img src="./Images/icon/contact/sharpened_image.png">
           <p class="thanks__content">Bạn chưa đăng nhập!<br> 
