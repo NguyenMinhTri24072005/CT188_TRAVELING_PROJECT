@@ -190,7 +190,30 @@ textarea {
     margin-left: 20px;
     border-radius: 5px;
 }
-
+.error-msg {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.field select{
+    width: 50%;
+    height: 30px;
+}
+.hienthi{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit_ad{
+  background: #2ea8ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin-top: 10px;
+  width: 15%;
+}
 @media (max-width: 1200px) {
     .main__header {
         padding: 0 100px;
@@ -218,28 +241,4 @@ textarea {
     .row {
         flex-direction: column;
     }
-}
-.error-msg {
-  color: red;
-  font-size: 13px;
-  margin-top: 4px;
-}
-.field select{
-    width: 50%;
-    height: 30px;
-}
-.hienthi{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.submit_ad{
-  background: #2ea8ff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  float: left;
-  margin-top: 10px;
-  width: 15%;
 }
