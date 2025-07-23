@@ -1,6 +1,5 @@
 body {
  background-color: aliceblue;
- height: 1000px;
 }
 
   .all{
@@ -8,6 +7,7 @@ body {
     padding-top: 150px;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+    justify-self: center;
   }
    .left{
     margin-left: 25%;
@@ -36,6 +36,7 @@ body {
 
   .right{
     margin-right: 25%;
+      min-width: 280px;
       display: flex;
       flex-direction: column;
       border-width: 1px;
@@ -170,6 +171,20 @@ input.invalid {
 }
 
 @media (max-width: 768px) {
-
+  .all{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "right" "left";
+    row-gap: 40px;
+  }
+  .left{
+    margin-right: 13%;
+    margin-left: -25%;
+    padding-left: 40%;
+  
+  }
+  .form{
+    margin-left: 15%;
+    margin-right: -10%;
+  }
 
 }

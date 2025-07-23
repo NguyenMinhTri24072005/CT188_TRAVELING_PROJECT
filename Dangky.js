@@ -112,7 +112,7 @@ function signin(event) {
     emailInput.classList.remove("invalid");
     passwordInput.classList.add("valid");
     passwordInput.classList.remove("invalid");
-
+    localStorage.setItem("loggedInUser", email); 
      if (rememberCheckbox.checked) {
       localStorage.setItem("rememberedEmail", email);
       localStorage.setItem("rememberedPassword", password);

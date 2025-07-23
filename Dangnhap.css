@@ -220,7 +220,18 @@ input.invalid {
 /* Khi màn hình nhỏ hơn 768px (tablet, mobile) */
 @media (max-width: 768px) {
   .main {
-    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "form" "left";
+    row-gap: 40px;
+  }
+  .left{
+    margin-left: -10%;
+    margin-right: 10%;
+  }
+  .form{
+      margin-left: 10%;
+      margin-right: 10%;
   }
 }
+
 
