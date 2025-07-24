@@ -1,0 +1,244 @@
+:root {
+    --primary-color: #296089;
+    --secondary-color: #f0dd77;
+    --third-color: #96d0cd;
+    --four-color: #f7d77a;
+}
+.layout-rules {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0px auto;
+}
+.main .main__banner {
+    position: relative;
+    background-color: grey;
+    height: 400px;
+    margin-top: 100px;
+}
+.main .main__banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.main__rental-cars-search-box {
+    width: 100%;
+}
+.main__rental-cars-search-box .rental-cars-search-box__link {
+    box-shadow: 0px 0px 5px #777;
+    width: 60%;
+    margin: 0px auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.main__rental-cars-search-box .rental-cars-search-box__top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.rental-cars-search-box__top .rental-cars-search-box__section {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.rental-cars-search-box__top .rental-cars-search-box__section label {
+    font-family: sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4rem;
+}
+.rental-cars-search-box__top .rental-cars-search-box__section input {
+    width: 100%;
+    height: 1.8rem;
+    font-family: sans-serif;
+    color: #333;
+    padding: 5px 20px;
+}
+.rental-cars-search-box__bottom {
+    width: 100%;
+    position: static;
+}
+.rental-cars-search-box__bottom input {
+    border: 1px solid var(--primary-color);
+    width: 20%;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    height: 40px;
+    bottom: -40px;
+}
+.rental-cars-search-box__bottom input:hover {
+    box-shadow: 0px 0px 5px #111;
+    background-color: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+    border: none;
+}
+.rental-cars-search-box__bottom input:active{
+    box-shadow: 0px 0px 10px #777;
+}
+
+@media screen and (min-width: 540px ){
+    .main__rental-cars-search-box .rental-cars-search-box__top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "rental-location rental-location"
+            "receive-date rental-duration";
+    }
+    .rental-cars-search-box__section.rental-location{
+        grid-area: rental-location;
+    }
+    .rental-cars-search-box__section.receive-date{
+        grid-area: receive-date;
+    }
+    .rental-cars-search-box__section.rental-duration {
+        grid-area: rental-duration;
+    }
+}
+@media screen and (min-width: 767px ){
+    .main__rental-cars-search-box .rental-cars-search-box__top{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "rental-location  receive-date rental-duration";
+    }
+    .rental-cars-search-box__section.rental-location{
+        grid-area: rental-location;
+    }
+    .rental-cars-search-box__section.receive-date{
+        grid-area: receive-date;
+    }
+    .rental-cars-search-box__section.rental-duration {
+        grid-area: rental-duration;
+    }
+}
+
+
+/* handling card item */
+.layout-rules {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 8rem;
+}
+.main__rental-cars-container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main__rental-cars-container .rental-cars-item__link {
+    user-select: none;
+    display: block;
+    background-color: #ffffff;
+    padding: 18px;
+    box-shadow: 0px 0px 5px #777;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 5px 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.main__rental-cars-container .rental-cars-item__link:hover {
+    box-shadow: 0px 0px 10px #111;
+    cursor: pointer;
+}
+.main__rental-cars-container .rental-cars-item__link:active {
+    box-shadow: 0px 0px 5px var(--four-color);
+}
+.main__rental-cars-container .rental-cars-item__link img {
+    border: none;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--third-color);
+    border: none;
+}
+.main__rental-cars-container .rental-cars-item__link h2 {
+    text-align: center;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main__rental-cars-container .rental-cars-item__link .rental-cars-item__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    color: black;
+    font-family: sans-serif;
+}
+.rental-cars-item__link .rental-cars-item__row div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rental-cars-item__link .rental-cars-item__row div.rental-cars-item__price {
+    color: #ff5500;
+}
+.main__rental-cars-container .rental-cars-item__link .rental-cars-item__add-cart,
+.main__rental-cars-container .rental-cars-item__link .rental-cars-item__order {
+    border: 1px solid #ff0000;
+    background: none;
+    padding: 10px;
+    color: #ff0000;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main__rental-cars-container .rental-cars-item__link .rental-cars-item__order {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+.main__rental-cars-container .rental-cars-item__link button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #111;
+}
+.main__rental-cars-container .rental-cars-item__link button:active {
+    box-shadow: 0px 0px 10px #777;
+}
+@media screen and (min-width: 540px) {
+    .main__rental-cars-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 767px) {
+    .main__rental-cars-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,254 @@
+body {
+  background-color: aliceblue;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 15rem;
+  width: 80%;
+  margin: 12rem auto 0px;
+}
+
+.left {
+  width: 100%;
+  padding: 10px;
+}
+
+.img {
+  width: 100%;
+  position: relative;
+}
+
+.img-swap-1,
+.img-swap-2 {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: fill;
+  transition: 1s ease-in-out;
+}
+
+.img-swap-1 {
+  position: absolute;
+}
+
+.img-swap-1:hover {
+  opacity: 0.0;
+}
+
+.img-swap-2:hover {
+  opacity: 1.0;
+}
+
+.form-over {
+  padding: 10px;
+  width: 100%;
+}
+.form {
+  background-color: #FFFFFF;
+  position: relative;
+  min-width: 280px;
+  padding: 10px;
+  border-width: 1px;
+  border: none;
+  display: grid;
+  grid-template-rows: 3fr 0.5fr 1fr 1fr 1fr 1fr 1fr 0.7fr 2fr;
+}
+
+
+.Dangnhap {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #296089;
+  align-content: center;
+
+}
+
+.email {
+  width: 150px;
+  height: 19px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.nhap-button-1 {
+  position: relative;
+  height: 47px;
+  border-width: 1px;
+  border: none;
+  background-color: rgb(214, 236, 247);
+  cursor: pointer;
+  width: 80%;
+  margin: 0px auto;
+  padding-left: 10px;
+}
+
+.pass-w {
+  margin-left: 75px;
+  align-content: end;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.box-tick {
+  display: flex;
+  width: 80%;
+  margin: 0px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 24px;
+  height: 22px;
+  border-width: 1px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  cursor: pointer;
+  justify-self: start;
+  width: 10%;
+}
+
+.ques-1 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+  text-align: start;
+  width: 45%;
+  padding: 0px 5px;
+}
+
+.ques-2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0083A6;
+  cursor: pointer;
+  text-decoration: none;
+  width: 45%;
+}
+
+.click {
+  display: grid;
+  justify-content: center;
+  align-content: end;
+}
+
+.login-button {
+  width: 169px;
+  height: 29px;
+  left: 190px;
+  border-width: 1px;
+  border-radius: 10px;
+  background: #296089;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 1s,
+    color 0.5s;
+
+}
+
+.login-button:hover {
+  background-color: rgb(11, 81, 102);
+  color: #ffffff;
+}
+
+.login-button:active {
+  opacity: 0.5;
+}
+
+.choose {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+  margin-top: 4px;
+}
+
+.login-with {
+  display: flex;
+  grid-template-columns: 33px 33px 33px 33px 33px;
+  grid-template-areas: "1 2 3 4 5";
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.button-1 {
+  width: 33px;
+  height: 33px;
+  top: 421px;
+  left: 152px;
+  margin-left: 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.img-1 {
+  width: 33px;
+  height: 33px;
+  top: 421px;
+  left: 152px;
+  border-radius: 100%;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+input.valid {
+  border: 2px solid green;
+}
+
+input.invalid {
+  border: 2px solid red;
+}
+
+
+@media screen and (min-width: 767px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .left {
+    width: 50%;
+  }
+  .form-over {
+    width: 50%;
+  }
+}

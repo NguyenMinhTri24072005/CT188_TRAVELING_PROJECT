@@ -1,0 +1,1141 @@
+[
+    {
+        "ProductId": "tourdmt001",
+        "name": "Mỹ Tho - Thới Sơn - Cồn Phụng - Bến Tre",
+        "price": 599000,
+        "locations": [
+            "Mỹ tho",
+            "thới sơn",
+            "cồn phụng",
+            "bến Tre"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/image/Services/Tours/domestic_no1/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no1/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no1/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no1/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt002",
+        "name": "Hà Nội - Ninh Bình - Hạ Long - Sa Pa",
+        "price": 3500000,
+        "locations": [
+            "Hà Nội",
+            "Ninh Bình",
+            "Hạ Long",
+            "Sa Pa"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no2/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no2/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no2/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no2/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt003",
+        "name": "Đà Nẵng - Hội An - Huế - Bà Nà Hills",
+        "price": 2850000,
+        "locations": [
+            "Đà Nẵng",
+            "Hội An",
+            "Huế",
+            "Bà Nà Hills"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no3/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no3/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no3/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no3/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt004",
+        "name": "Nha Trang - Đà Lạt - Phan Thiết - Mũi Né",
+        "price": 3100000,
+        "locations": [
+            "Nha Trang",
+            "Đà Lạt",
+            "Phan Thiết",
+            "Mũi Né"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no4/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no4/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no4/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no4/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt005",
+        "name": "Phú Quốc - Cần Thơ - Mỹ Tho - Châu Đốc",
+        "price": 4200000,
+        "locations": [
+            "Phú Quốc",
+            "Cần Thơ",
+            "Mỹ Tho",
+            "Châu Đốc"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no5/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no5/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no5/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no5/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt006",
+        "name": "Mộc Châu - Mai Châu - Pù Luông - Hòa Bình",
+        "price": 2600000,
+        "locations": [
+            "Mộc Châu",
+            "Mai Châu",
+            "Pù Luông",
+            "Hòa Bình"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no6/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no6/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no6/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no6/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt007",
+        "name": "Quy Nhơn - Phú Yên - Bình Định - Gành Đá Đĩa",
+        "price": 2950000,
+        "locations": [
+            "Quy Nhơn",
+            "Phú Yên",
+            "Bình Định",
+            "Gành Đá Đĩa"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no7/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no7/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no7/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no7/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt008",
+        "name": "Côn Đảo - Vũng Tàu - Long Hải - Hồ Tràm",
+        "price": 3800000,
+        "locations": [
+            "Côn Đảo",
+            "Vũng Tàu",
+            "Long Hải",
+            "Hồ Tràm"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no8/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no8/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no8/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no8/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt009",
+        "name": "Buôn Ma Thuột - Pleiku - Kon Tum - Gia Lai",
+        "price": 3150000,
+        "locations": [
+            "Buôn Ma Thuột",
+            "Pleiku",
+            "Kon Tum",
+            "Gia Lai"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no9/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no9/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no9/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no9/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourdmt0010",
+        "name": "An Giang - Đồng Tháp - Sóc Trăng - Bạc Liêu",
+        "price": 2700000,
+        "locations": [
+            "An Giang",
+            "Đồng Tháp",
+            "Sóc Trăng",
+            "Bạc Liêu"
+        ],
+        "duration": "3 ngày 2 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-08-10",
+            "2025-08-25",
+            "2025-09-05",
+            "2025-09-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/domestic_no10/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no10/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no10/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/domestic_no10/tour_4.jpg"
+        ],
+        "type": "domestic",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor001",
+        "name": "Paris - Brussels - Amsterdam - Berlin",
+        "price": 35000000,
+        "locations": [
+            "Paris",
+            "Brussels",
+            "Amsterdam",
+            "Berlin"
+        ],
+        "duration": "7 ngày 6 đêm",
+        "availableSeats": 20,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-01",
+            "2025-09-15",
+            "2025-10-02",
+            "2025-10-18",
+            "2025-11-05"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no1/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no1/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no1/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no1/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor002",
+        "name": "Rome - Florence - Venice - Milan",
+        "price": 32500000,
+        "locations": [
+            "Rome",
+            "Florence",
+            "Venice",
+            "Milan"
+        ],
+        "duration": "6 ngày 5 đêm",
+        "availableSeats": 18,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-08",
+            "2025-09-22",
+            "2025-10-10",
+            "2025-10-25",
+            "2025-11-12"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no2/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no2/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no2/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no2/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor003",
+        "name": "Kyoto - Osaka - Nara - Tokyo",
+        "price": 28000000,
+        "locations": [
+            "Kyoto",
+            "Osaka",
+            "Nara",
+            "Tokyo"
+        ],
+        "duration": "8 ngày 7 đêm",
+        "availableSeats": 22,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-03",
+            "2025-09-17",
+            "2025-10-05",
+            "2025-10-20",
+            "2025-11-08"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no3/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no3/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no3/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no3/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor004",
+        "name": "Seoul - Busan - Jeju - Gyeongju",
+        "price": 25000000,
+        "locations": [
+            "Seoul",
+            "Busan",
+            "Jeju",
+            "Gyeongju"
+        ],
+        "duration": "7 ngày 6 đêm",
+        "availableSeats": 20,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-10",
+            "2025-09-24",
+            "2025-10-12",
+            "2025-10-28",
+            "2025-11-15"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no4/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no4/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no4/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no4/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor005",
+        "name": "Bangkok - Chiang Mai - Phuket - Koh Phi Phi",
+        "price": 18000000,
+        "locations": [
+            "Bangkok",
+            "Chiang Mai",
+            "Phuket",
+            "Koh Phi Phi"
+        ],
+        "duration": "6 ngày 5 đêm",
+        "availableSeats": 25,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-05",
+            "2025-09-19",
+            "2025-10-07",
+            "2025-10-22",
+            "2025-11-10"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no5/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no5/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no5/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no5/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor006",
+        "name": "Singapore - Kuala Lumpur - Penang - Langkawi",
+        "price": 20000000,
+        "locations": [
+            "Singapore",
+            "Kuala Lumpur",
+            "Penang",
+            "Langkawi"
+        ],
+        "duration": "5 ngày 4 đêm",
+        "availableSeats": 23,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-12",
+            "2025-09-26",
+            "2025-10-15",
+            "2025-10-30",
+            "2025-11-18"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no6/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no6/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no6/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no6/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor007",
+        "name": "Sydney - Melbourne - Brisbane - Gold Coast",
+        "price": 45000000,
+        "locations": [
+            "Sydney",
+            "Melbourne",
+            "Brisbane",
+            "Gold Coast"
+        ],
+        "duration": "9 ngày 8 đêm",
+        "availableSeats": 15,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-07",
+            "2025-09-21",
+            "2025-10-09",
+            "2025-10-24",
+            "2025-11-11"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no7/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no7/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no7/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no7/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor008",
+        "name": "New York - Washington D.C. - Philadelphia - Boston",
+        "price": 50000000,
+        "locations": [
+            "New York",
+            "Washington D.C.",
+            "Philadelphia",
+            "Boston"
+        ],
+        "duration": "8 ngày 7 đêm",
+        "availableSeats": 17,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-14",
+            "2025-09-28",
+            "2025-10-17",
+            "2025-11-01",
+            "2025-11-19"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no8/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no8/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no8/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no8/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor009",
+        "name": "London - Edinburgh - Dublin - Belfast",
+        "price": 40000000,
+        "locations": [
+            "London",
+            "Edinburgh",
+            "Dublin",
+            "Belfast"
+        ],
+        "duration": "7 ngày 6 đêm",
+        "availableSeats": 19,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-02",
+            "2025-09-16",
+            "2025-10-04",
+            "2025-10-19",
+            "2025-11-07"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no9/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no9/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no9/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no9/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor010",
+        "name": "Cairo - Luxor - Aswan - Alexandria",
+        "price": 30000000,
+        "locations": [
+            "Cairo",
+            "Luxor",
+            "Aswan",
+            "Alexandria"
+        ],
+        "duration": "6 ngày 5 đêm",
+        "availableSeats": 20,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-09",
+            "2025-09-23",
+            "2025-10-11",
+            "2025-10-26",
+            "2025-11-14"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no10/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no10/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no10/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no10/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor011",
+        "name": "Vancouver - Victoria - Seattle - Portland",
+        "price": 42000000,
+        "locations": [
+            "Vancouver",
+            "Victoria",
+            "Seattle",
+            "Portland"
+        ],
+        "duration": "7 ngày 6 đêm",
+        "availableSeats": 18,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-06",
+            "2025-09-20",
+            "2025-10-08",
+            "2025-10-23",
+            "2025-11-09"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no11/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no11/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no11/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no11/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor012",
+        "name": "Rio de Janeiro - Sao Paulo - Buenos Aires - Montevideo",
+        "price": 38000000,
+        "locations": [
+            "Rio de Janeiro",
+            "Sao Paulo",
+            "Buenos Aires",
+            "Montevideo"
+        ],
+        "duration": "9 ngày 8 đêm",
+        "availableSeats": 16,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-11",
+            "2025-09-25",
+            "2025-10-13",
+            "2025-10-29",
+            "2025-11-16"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no12/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no12/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no12/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no12/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor013",
+        "name": "Dubai - Abu Dhabi - Doha - Muscat",
+        "price": 37000000,
+        "locations": [
+            "Dubai",
+            "Abu Dhabi",
+            "Doha",
+            "Muscat"
+        ],
+        "duration": "5 ngày 4 đêm",
+        "availableSeats": 20,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-04",
+            "2025-09-18",
+            "2025-10-06",
+            "2025-10-21",
+            "2025-11-13"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no13/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no13/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no13/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no13/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor014",
+        "name": "Barcelona - Madrid - Seville - Granada",
+        "price": 33000000,
+        "locations": [
+            "Barcelona",
+            "Madrid",
+            "Seville",
+            "Granada"
+        ],
+        "duration": "8 ngày 7 đêm",
+        "availableSeats": 19,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-13",
+            "2025-09-27",
+            "2025-10-16",
+            "2025-10-31",
+            "2025-11-20"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no14/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no14/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no14/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no14/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor015",
+        "name": "Hong Kong - Macau - Quảng Châu - Thâm Quyến",
+        "price": 22000000,
+        "locations": [
+            "Hong Kong",
+            "Macau",
+            "Quảng Châu",
+            "Thâm Quyến"
+        ],
+        "duration": "5 ngày 4 đêm",
+        "availableSeats": 24,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-01",
+            "2025-09-15",
+            "2025-10-02",
+            "2025-10-18",
+            "2025-11-05"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no15/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no15/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no15/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no15/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor016",
+        "name": "Vancouver - Banff - Jasper - Calgary",
+        "price": 48000000,
+        "locations": [
+            "Vancouver",
+            "Banff",
+            "Jasper",
+            "Calgary"
+        ],
+        "duration": "10 ngày 9 đêm",
+        "availableSeats": 14,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-08",
+            "2025-09-22",
+            "2025-10-10",
+            "2025-10-25",
+            "2025-11-12"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no16/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no16/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no16/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no16/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor017",
+        "name": "Prague - Vienna - Budapest - Bratislava",
+        "price": 29000000,
+        "locations": [
+            "Prague",
+            "Vienna",
+            "Budapest",
+            "Bratislava"
+        ],
+        "duration": "6 ngày 5 đêm",
+        "availableSeats": 21,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-03",
+            "2025-09-17",
+            "2025-10-05",
+            "2025-10-20",
+            "2025-11-08"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no17/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no17/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no17/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no17/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor018",
+        "name": "Lima - Cusco - Machu Picchu - Nazca",
+        "price": 36000000,
+        "locations": [
+            "Lima",
+            "Cusco",
+            "Machu Picchu",
+            "Nazca"
+        ],
+        "duration": "8 ngày 7 đêm",
+        "availableSeats": 17,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-10",
+            "2025-09-24",
+            "2025-10-12",
+            "2025-10-28",
+            "2025-11-15"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no18/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no18/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no18/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no18/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor019",
+        "name": "Cape Town - Johannesburg - Kruger - Victoria Falls",
+        "price": 41000000,
+        "locations": [
+            "Cape Town",
+            "Johannesburg",
+            "Kruger",
+            "Victoria Falls"
+        ],
+        "duration": "9 ngày 8 đêm",
+        "availableSeats": 15,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-05",
+            "2025-09-19",
+            "2025-10-07",
+            "2025-10-22",
+            "2025-11-10"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no19/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no19/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no19/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no19/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "tourfor020",
+        "name": "Helsinki - Tallinn - Stockholm - Oslo",
+        "price": 39000000,
+        "locations": [
+            "Helsinki",
+            "Tallinn",
+            "Stockholm",
+            "Oslo"
+        ],
+        "duration": "7 ngày 6 đêm",
+        "availableSeats": 18,
+        "description": "mô tả",
+        "departureDates": [
+            "2025-09-12",
+            "2025-09-26",
+            "2025-10-15",
+            "2025-10-30",
+            "2025-11-18"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/foreign_no20/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no20/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no20/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/foreign_no20/tour_4.jpg"
+        ],
+        "type": "foreign",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no1",
+        "name": "Khám Phá Thiên Đường Maldives & Dubai Tráng Lệ",
+        "price": 55000000,
+        "locations": [
+            "Malé",
+            "Dubai",
+            "Abu Dhabi"
+        ],
+        "duration": "8 ngày 7 đêm",
+        "availableSeats": 12,
+        "description": "Trải nghiệm kỳ nghỉ dưỡng xa hoa tại Maldives và khám phá sự lộng lẫy của Dubai, Abu Dhabi.",
+        "departureDates": [
+            "2025-09-01",
+            "2025-09-15",
+            "2025-10-01",
+            "2025-10-15",
+            "2025-11-01"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no1/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no1/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no1/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no1/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no2",
+        "name": "Chuyến Du Ngoạn Châu Âu Hoàng Gia: Pháp - Thụy Sĩ - Ý",
+        "price": 62000000,
+        "locations": [
+            "Paris",
+            "Lucerne",
+            "Venice",
+            "Rome"
+        ],
+        "duration": "10 ngày 9 đêm",
+        "availableSeats": 10,
+        "description": "Hành trình khám phá vẻ đẹp cổ kính và lãng mạn của các thành phố nổi tiếng Châu Âu.",
+        "departureDates": [
+            "2025-09-08",
+            "2025-09-22",
+            "2025-10-08",
+            "2025-10-22",
+            "2025-11-08"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no2/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no2/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no2/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no2/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no3",
+        "name": "Hành Trình Qua Lòng Úc: Sydney - Melbourne - Great Barrier Reef",
+        "price": 58000000,
+        "locations": [
+            "Sydney",
+            "Melbourne",
+            "Cairns"
+        ],
+        "duration": "9 ngày 8 đêm",
+        "availableSeats": 14,
+        "description": "Khám phá các thành phố sôi động và kỳ quan thiên nhiên rạn san hô lớn nhất thế giới.",
+        "departureDates": [
+            "2025-09-03",
+            "2025-09-17",
+            "2025-10-03",
+            "2025-10-17",
+            "2025-11-03"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no3/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no3/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no3/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no3/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no4",
+        "name": "Du Lịch Nghỉ Dưỡng Sang Trọng: Hawaii - Bora Bora",
+        "price": 70000000,
+        "locations": [
+            "Maui",
+            "Oahu",
+            "Bora Bora"
+        ],
+        "duration": "12 ngày 11 đêm",
+        "availableSeats": 8,
+        "description": "Tận hưởng những bãi biển tuyệt đẹp và dịch vụ đẳng cấp tại các khu nghỉ dưỡng sang trọng.",
+        "departureDates": [
+            "2025-09-10",
+            "2025-09-24",
+            "2025-10-10",
+            "2025-10-24",
+            "2025-11-10"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no4/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no4/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no4/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no4/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no5",
+        "name": "Nhật Bản Mùa Lá Đỏ & Suối Nước Nóng Onsen",
+        "price": 48000000,
+        "locations": [
+            "Tokyo",
+            "Kyoto",
+            "Hakone",
+            "Osaka"
+        ],
+        "duration": "8 ngày 7 đêm",
+        "availableSeats": 16,
+        "description": "Chiêm ngưỡng vẻ đẹp rực rỡ của mùa lá đỏ và thư giãn tại các suối nước nóng truyền thống.",
+        "departureDates": [
+            "2025-10-01",
+            "2025-10-15",
+            "2025-11-01",
+            "2025-11-15"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no5/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no5/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no5/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no5/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no6",
+        "name": "Phiêu Lưu Vùng Cực: Bắc Cực Quang & Alaska",
+        "price": 85000000,
+        "locations": [
+            "Fairbanks",
+            "Anchorage",
+            "Denali National Park"
+        ],
+        "duration": "10 ngày 9 đêm",
+        "availableSeats": 6,
+        "description": "Trải nghiệm cuộc phiêu lưu độc đáo ngắm Bắc Cực Quang và khám phá vẻ đẹp hoang sơ của Alaska.",
+        "departureDates": [
+            "2025-11-05",
+            "2025-11-19",
+            "2025-12-03"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no6/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no6/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no6/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no6/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no7",
+        "name": "Di Sản Thế Giới: Ai Cập Huyền Bí & Jordan Cổ Kính",
+        "price": 53000000,
+        "locations": [
+            "Cairo",
+            "Luxor",
+            "Petra",
+            "Amman"
+        ],
+        "duration": "10 ngày 9 đêm",
+        "availableSeats": 12,
+        "description": "Khám phá các di tích cổ đại vĩ đại và nền văn minh lâu đời của Ai Cập và Jordan.",
+        "departureDates": [
+            "2025-09-07",
+            "2025-09-21",
+            "2025-10-07",
+            "2025-10-21"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no7/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no7/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no7/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no7/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no8",
+        "name": "Nam Mỹ Hùng Vĩ: Machu Picchu - Rio de Janeiro",
+        "price": 60000000,
+        "locations": [
+            "Cusco",
+            "Machu Picchu",
+            "Rio de Janeiro",
+            "Buenos Aires"
+        ],
+        "duration": "11 ngày 10 đêm",
+        "availableSeats": 10,
+        "description": "Đắm mình vào văn hóa Inca cổ đại và khám phá vẻ đẹp sôi động của Nam Mỹ.",
+        "departureDates": [
+            "2025-09-14",
+            "2025-09-28",
+            "2025-10-14",
+            "2025-10-28"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no8/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no8/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no8/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no8/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no9",
+        "name": "Bắc Âu Huyền Ảo: Iceland & Na Uy Fjords",
+        "price": 75000000,
+        "locations": [
+            "Reykjavik",
+            "Oslo",
+            "Bergen"
+        ],
+        "duration": "9 ngày 8 đêm",
+        "availableSeats": 8,
+        "description": "Khám phá phong cảnh thiên nhiên hùng vĩ, núi lửa, sông băng và vịnh hẹp tuyệt đẹp.",
+        "departureDates": [
+            "2025-09-02",
+            "2025-09-16",
+            "2025-10-02",
+            "2025-10-16",
+            "2025-11-02"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no9/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no9/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no9/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no9/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    },
+    {
+        "ProductId": "luxury_no30",
+        "name": "Nghỉ Dưỡng Thượng Lưu: Santorini - Mykonos",
+        "price": 65000000,
+        "locations": [
+            "Santorini",
+            "Mykonos",
+            "Athens"
+        ],
+        "duration": "8 ngày 7 đêm",
+        "availableSeats": 10,
+        "description": "Trải nghiệm sự lãng mạn và kiến trúc độc đáo của các hòn đảo Hy Lạp nổi tiếng.",
+        "departureDates": [
+            "2025-09-09",
+            "2025-09-23",
+            "2025-10-09",
+            "2025-10-23",
+            "2025-11-09"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Tours/luxury_no30/tour_1.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no30/tour_2.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no30/tour_3.jpg",
+            "./Images/products/Image/Services/Tours/luxury_no30/tour_4.jpg"
+        ],
+        "type": "luxury",
+        "class": "tours"
+    }
+]

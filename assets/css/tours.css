@@ -1,0 +1,253 @@
+:root {
+    --primary-color: #296089;
+    --secondary-color: #f0dd77;
+    --third-color: #96d0cd;
+    --four-color: #f7d77a;
+}
+/* main section */
+.layout-rules {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0px auto;
+}
+.main .main__banner {
+    position: relative;
+    background-color: grey;
+    height: 400px;
+    margin-top: 100px;
+}
+.main .main__banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.main .main__search-box{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 30px 20px 50px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+            "destination"
+            "date"
+            "budget";
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 5px var(--primary-color);
+    transform: translate(0, -50%);
+}
+@media screen and (min-width: 540px){
+    .main .main__search-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        grid-template-areas: 
+            "destination destination"
+            "date budget";
+        width: 80%;
+    }
+}
+@media screen and (min-width: 767px){
+    .main .main__search-box{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .main .main__search-box{
+        width: 60%;
+    }
+}
+.main .main__search-box .search-box__destination,
+.main .main__search-box .search-box__date,
+.main .main__search-box .search-box__budget {
+    grid-area: destination;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.main .main__search-box .search-box__destination,
+.main .main__search-box .search-box__date,
+.main .main__search-box .search-box__budget{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main .main__search-box .search-box__destination label,
+.main .main__search-box .search-box__date label,
+.main .main__search-box .search-box__budget label{
+    font-family: sans-serif;
+    color: #575553;
+}
+.main .main__search-box .search-box__destination input,
+.main .main__search-box .search-box__date input,
+.main .main__search-box .search-box__budget input {
+    width: 100%;
+    height: 30px;
+    padding-inline-start: 10px;
+    color: #575553;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    
+}
+.main .main__search-box input:hover {
+    cursor: text;
+}
+.main .main__search-box .search-box__date{
+    grid-area: date;
+    flex-shrink: 1;
+}
+.main .main__search-box .search-box__budget{
+    grid-area: budget;
+    flex-shrink: 1;
+}
+.main .main__search-box button {
+    position: absolute;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 10px 50px;
+    transform: translate(-50%, -50%);
+    bottom: -40%;
+    left: 50%;
+}
+.main .main__search-box button:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.main .main__search-box button:active {
+    box-shadow: 0px 0px 10px var(--four-color);
+}
+
+
+/* handling card */
+.layout-rules {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.main__tours-container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__tours-container .tour-item__link {
+    user-select: none;
+    display: block;
+    background-color: #ffffff;
+    padding: 18px;
+    box-shadow: 0px 0px 5px #777;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 5px 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.main__tours-container .tour-item__link:hover {
+    box-shadow: 0px 0px 10px #111;
+    cursor: pointer;
+}
+.main__tours-container .tour-item__link:active {
+    box-shadow: 0px 0px 5px var(--four-color);
+}
+.main__tours-container .tour-item__link img {
+    border: none;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--third-color);
+    border: none;
+}
+
+.main__tours-container .tour-item__link h2 {
+    text-align: center;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main__tours-container .tour-item__link .tour-item__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    color: black;
+    font-family: sans-serif;
+}
+.main__tours-container .tour-item__heading,
+.main__tours-container .tour-item__link .tour-item__col1, 
+.main__tours-container .tour-item__link .tour-item__col2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main__tours-container .tour-item__link .tour-item__col2 {
+    color: #ff0000;
+}
+.main__tours-container .tour-item__link .tour-item__add-cart,
+.main__tours-container .tour-item__link .tour-item__order {
+    border: 1px solid #ff0000;
+    background: none;
+    padding: 10px;
+    color: #ff0000;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main__tours-container .tour-item__link .tour-item__order {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+.main__tours-container .tour-item__link button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px var(--primary-color);
+}
+@media screen and (min-width: 540px) {
+    .main__tours-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 767px) {
+    .main__tours-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* @media screen and (min-width: 1024px) {
+    .main__tours-container {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        justify-content: center;
+        align-items: center;
+    }
+} */

@@ -1,0 +1,448 @@
+:root {
+    --primary-color: #296089;
+    --secondary-color: #f0dd77;
+    --third-color: #96d0cd;
+    --four-color: #f7d77a;
+}
+
+/* main section */
+.layout-rules {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0px auto;
+}
+.main {
+    padding-top: 12rem;
+}
+/* this style is used only for hotels details */
+.main h1.tour-heading {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: #333;
+}
+
+.main .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .product-details .tour-images {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: stretch;
+}
+
+.main .product-details .tour-images .tour-images__aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .product-details .tour-images .tour-images__aside img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 25px;
+}
+.main .product-details .tour-images .tour-images__aside img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px var(--primary-color);
+}
+
+.main .product-details .tour-images .tour-images__main {
+    width: 80%;
+    padding: 5px;
+}
+
+.main .product-details .tour-images .tour-images__main img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.main .product-details .tour-info {
+    box-shadow: 0px 0px 10px var(--primary-color);
+    border-radius: 25px;
+    padding: 20px 0px;
+    width: 90%;
+}
+
+.main .product-details .tour-info .tour-info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    margin: 8px 0px;
+}
+
+.main .product-details .tour-info .tour-info__col {
+    width: 50%;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 5px
+}
+
+.main .product-details .tour-info .tour-info__col2 {
+    color: #000000;
+    font-weight: 600;
+}
+.main .product-details .tour-info .tour-info__col2:hover {
+    overflow: visible;
+    white-space: wrap;
+    cursor: pointer;
+}
+.main .product-details .tour-info .tour-info__row--price {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .product-details .tour-info .tour-info__price span {
+    color: #ff0000;
+}
+
+.main .product-details .tour-info .tour-info__row button {
+    border: 1px solid var(--primary-color);
+    font-family: sans-serif;
+    background: #ffffff;
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .product-details .tour-info .tour-info__row button.product-info__order {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.main .product-details .tour-info .tour-info__row button:hover {
+    box-shadow: 0px 0px 5px var(--primary-color);
+    cursor: pointer;
+}
+
+.main .product-details .tour-info .tour-info__row button:active {
+    box-shadow: 0px 0px 10px var(--four-color);
+}
+
+@media screen and (min-width: 767px) {
+    .main .product-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .main .product-details .tour-images {
+        width: 60%;
+        display: flex;
+        justify-self: center;
+        align-items: stretch;
+    }
+
+    .main .product-details .tour-info {
+        box-shadow: 0px 0px 10px var(--primary-color);
+        border-radius: 25px;
+        padding: 20px auto;
+        width: 40%;
+        margin: 5px;
+    }
+    .main .product-details .tour-info .tour-info__row button{
+        font-size: 0.9rem;
+    }
+}
+
+/* this style is used only for hotels details */
+.main h1.hotel-heading {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: #333;
+}
+
+.main .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .product-details .hotel-images {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: stretch;
+}
+
+.main .product-details .hotel-images .hotel-images__aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .product-details .hotel-images .hotel-images__aside img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 25px;
+}
+.main .product-details .hotel-images .hotel-images__aside img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px var(--primary-color);
+}
+
+.main .product-details .hotel-images .hotel-images__main {
+    width: 80%;
+    padding: 5px;
+}
+
+.main .product-details .hotel-images .hotel-images__main img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.main .product-details .hotel-info {
+    box-shadow: 0px 0px 10px var(--primary-color);
+    border-radius: 25px;
+    padding: 20px 0px;
+    width: 90%;
+}
+
+.main .product-details .hotel-info .hotel-info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    margin: 8px 0px;
+    font-family: sans-serif;
+    color: #333;
+    font-weight: 600;
+}
+
+.main .product-details .hotel-info .hotel-info__col {
+    width: 50%;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 5px
+}
+
+.main .product-details .hotel-info .hotel-info__col2 {
+    color: #000000;
+    font-weight: 600;
+}
+.main .product-details .hotel-info .hotel-info__col2:hover {
+    overflow: visible;
+    white-space: wrap;
+    cursor: pointer;
+}
+.main .product-details .hotel-info .hotel-info__row--price {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .product-details .hotel-info .hotel-info__price span {
+    color: #ff0000;
+}
+
+.main .product-details .hotel-info .hotel-info__row button {
+    border: 1px solid var(--primary-color);
+    font-family: sans-serif;
+    background: #ffffff;
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .product-details .hotel-info .hotel-info__row button.product-info__order {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.main .product-details .hotel-info .hotel-info__row button:hover {
+    box-shadow: 0px 0px 5px var(--primary-color);
+    cursor: pointer;
+}
+
+.main .product-details .hotel-info .hotel-info__row button:active {
+    box-shadow: 0px 0px 10px var(--four-color);
+}
+@media screen and (min-width: 767px) {
+    .main .product-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .main .product-details .hotel-images {
+        width: 60%;
+        display: flex;
+        justify-self: center;
+        align-items: stretch;
+    }
+
+    .main .product-details .hotel-info {
+        box-shadow: 0px 0px 10px var(--primary-color);
+        border-radius: 25px;
+        padding: 20px auto;
+        width: 40%;
+        margin: 5px;
+    }
+    .main .product-details .hotel-info .hotel-info__row button{
+        font-size: 0.9rem;
+    }
+}
+
+/* this style is used only for rental cars details */
+.main .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .product-details .rental-cars-image {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+.main .product-details .rental-cars-image img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+.main .product-details .rental-cars-info {
+    box-shadow: 0px 0px 10px var(--primary-color);
+    border-radius: 25px;
+    padding: 20px 0px;
+    width: 90%;
+}
+
+.main .product-details .rental-cars-info .rental-cars-info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    margin: 8px 0px;
+    font-family: sans-serif;
+    color: #333;
+    font-weight: 600;
+    width: 100%;
+}
+.main .product-details .rental-cars-info .rental-cars-info__row h2 {
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 800;
+}
+.main .rental-cars-info .rental-cars-info__row .rental-cars-info__price {
+    width: 100%;
+    text-align: center;
+    color: #ff5500;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main .product-details .rental-cars-info .rental-cars-info__col {
+    width: 50%;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 5px
+}
+.main .product-details .rental-cars-info .rental-cars-info__col2 {
+    color: #000000;
+    font-weight: 600;
+}
+.main .product-details .rental-cars-info .rental-cars-info__col2:hover {
+    overflow: visible;
+    white-space: wrap;
+    cursor: pointer;
+}
+
+.main .product-details .rental-cars-info__row button {
+    border: 1px solid var(--primary-color);
+    font-family: sans-serif;
+    background: #ffffff;
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .product-details .rental-cars-info__row button.product-info__order {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+.main .product-details .rental-cars-info__row button:hover {
+    box-shadow: 0px 0px 5px var(--primary-color);
+    cursor: pointer;
+}
+
+.main .product-details .hotel-info .hotel-info__row button:active {
+    box-shadow: 0px 0px 10px var(--four-color);
+}
+@media screen and (min-width: 767px) {
+    .main .product-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .main .product-details .rental-cars-image {
+        width: 60%;
+        margin: 5px;
+    }
+    .main .product-details .rental-cars-info {
+        width: 40%;
+        margin: 5px;
+    }
+}

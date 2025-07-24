@@ -1,0 +1,422 @@
+[
+    {
+        "ProductId": "hotel001",
+        "name": "Khách sạn Sunrise Beach",
+        "stars": 5,
+        "address": "123 Đường Biển, Đà Nẵng",
+        "city": "Đà Nẵng",
+        "pricePerNight": 2500000,
+        "description": "Khách sạn sang trọng với tầm nhìn ra biển, hồ bơi vô cực và dịch vụ đẳng cấp.",
+        "amenities": [
+            "Hồ bơi",
+            "Wifi miễn phí",
+            "Nhà hàng",
+            "Phòng gym",
+            "Spa"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_01/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_01/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_01/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_01/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+84901234567",
+            "email": "info@sunrise.com"
+        },
+        "roomsAvailable": 30,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel002",
+        "name": "InterContinental Hanoi Westlake",
+        "stars": 5,
+        "address": "5 Từ Hoa, Tây Hồ, Hà Nội",
+        "city": "Hà Nội",
+        "pricePerNight": 3200000,
+        "description": "Nằm trên mặt nước Hồ Tây, khách sạn mang đến sự thanh bình và sang trọng giữa lòng thủ đô.",
+        "amenities": [
+            "Hồ bơi ngoài trời",
+            "Wifi miễn phí",
+            "Bar/Lounge",
+            "Trung tâm thể dục",
+            "Dịch vụ phòng 24h"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_02/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_02/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_02/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_02/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842439996688",
+            "email": "hanoi@ihg.com"
+        },
+        "roomsAvailable": 25,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel003",
+        "name": "The Reverie Saigon",
+        "stars": 5,
+        "address": "22-36 Nguyễn Huệ, Quận 1, TP.HCM",
+        "city": "TP. Hồ Chí Minh",
+        "pricePerNight": 4000000,
+        "description": "Khách sạn 6 sao duy nhất tại Việt Nam với thiết kế nội thất xa hoa, lộng lẫy.",
+        "amenities": [
+            "Hồ bơi vô cực",
+            "Spa đẳng cấp",
+            "Nhà hàng cao cấp",
+            "Dịch vụ quản gia",
+            "Đưa đón sân bay"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_03/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_03/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_03/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_03/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842838236688",
+            "email": "info@thereveriesaigon.com"
+        },
+        "roomsAvailable": 18,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel004",
+        "name": "Fusion Resort Phu Quoc",
+        "stars": 5,
+        "address": "Biển Vũng Bầu, Cửa Cạn, Phú Quốc",
+        "city": "Phú Quốc",
+        "pricePerNight": 3800000,
+        "description": "Thiên đường nghỉ dưỡng với các biệt thự có hồ bơi riêng và dịch vụ spa toàn diện.",
+        "amenities": [
+            "Spa trọn gói",
+            "Hồ bơi riêng",
+            "Xe đạp miễn phí",
+            "Yoga",
+            "Câu cá"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_04/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_04/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_04/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_04/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842973989797",
+            "email": "info@fusionresortphuquoc.com"
+        },
+        "roomsAvailable": 22,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel005",
+        "name": "Victoria Hoi An Beach Resort & Spa",
+        "stars": 4,
+        "address": "Biển Cửa Đại, Hội An, Quảng Nam",
+        "city": "Hội An",
+        "pricePerNight": 1800000,
+        "description": "Khu nghỉ dưỡng mang phong cách làng chài truyền thống, gần phố cổ Hội An.",
+        "amenities": [
+            "Bãi biển riêng",
+            "Hồ bơi",
+            "Xe đưa đón phố cổ",
+            "Lớp học nấu ăn",
+            "Sân tennis"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_05/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_05/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_05/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_05/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842353927000",
+            "email": "res@victoriahoian.com"
+        },
+        "roomsAvailable": 40,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel006",
+        "name": "FLC Luxury Hotel Quy Nhon",
+        "stars": 5,
+        "address": "Eo Gió - Nhơn Lý, Quy Nhơn, Bình Định",
+        "city": "Quy Nhơn",
+        "pricePerNight": 2700000,
+        "description": "Quần thể nghỉ dưỡng 5 sao với sân golf, công viên hoang dã và bãi biển riêng.",
+        "amenities": [
+            "Sân golf",
+            "Công viên hoang dã",
+            "Hồ bơi",
+            "Karaoke",
+            "Xe buýt tham quan"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_06/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_06/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_06/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_06/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842566270000",
+            "email": "info@flcquynhon.com"
+        },
+        "roomsAvailable": 35,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel007",
+        "name": "Sapa Jade Hill Resort & Spa",
+        "stars": 4,
+        "address": "Thôn Lao Chải, Sa Pa, Lào Cai",
+        "city": "Sa Pa",
+        "pricePerNight": 1600000,
+        "description": "Khu nghỉ dưỡng ẩn mình giữa núi rừng Sa Pa, với tầm nhìn bao quát thung lũng Mường Hoa.",
+        "amenities": [
+            "Bữa sáng miễn phí",
+            "Wifi",
+            "Spa",
+            "Cho thuê xe máy",
+            "Lò sưởi"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_07/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_07/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_07/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_07/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842143888888",
+            "email": "info@sapajadehill.com"
+        },
+        "roomsAvailable": 28,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel008",
+        "name": "Anna Marina Nha Trang",
+        "stars": 4,
+        "address": "18 Nguyễn Bỉnh Khiêm, Nha Trang, Khánh Hòa",
+        "city": "Nha Trang",
+        "pricePerNight": 1500000,
+        "description": "Khách sạn ven biển hiện đại với các tiện nghi giải trí đa dạng.",
+        "amenities": [
+            "Bãi biển riêng",
+            "Hồ bơi vô cực",
+            "Quán bar trên tầng thượng",
+            "Kids club",
+            "Dịch vụ lặn biển"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_08/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_08/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_08/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_08/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842583820000",
+            "email": "contact@annamarinant.com"
+        },
+        "roomsAvailable": 45,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel009",
+        "name": "Pilgrimage Village Boutique Resort & Spa",
+        "stars": 4,
+        "address": "130 Minh Mạng, Thủy Xuân, Huế",
+        "city": "Huế",
+        "pricePerNight": 1900000,
+        "description": "Khu nghỉ dưỡng yên bình mang đậm kiến trúc truyền thống Huế, giữa không gian xanh mướt.",
+        "amenities": [
+            "Hồ bơi",
+            "Spa & Massage",
+            "Lớp Yoga",
+            "Xe đạp miễn phí",
+            "Thư viện"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_09/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_09/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_09/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_09/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842343885485",
+            "email": "info@pilgrimagevillage.com"
+        },
+        "roomsAvailable": 20,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel010",
+        "name": "Da Lat Palace Heritage Hotel",
+        "stars": 5,
+        "address": "02 Trần Phú, Phường 3, Đà Lạt",
+        "city": "Đà Lạt",
+        "pricePerNight": 2300000,
+        "description": "Khách sạn cổ kính mang phong cách Pháp, nằm giữa vườn cây xanh mát của thành phố Đà Lạt.",
+        "amenities": [
+            "Sân golf",
+            "Nhà hàng Pháp",
+            "Spa",
+            "Đánh xe ngựa",
+            "Phòng hội nghị"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_10/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_10/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_10/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_10/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842633825444",
+            "email": "info@dalatpalace.com"
+        },
+        "roomsAvailable": 20,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel011",
+        "name": "Vinpearl Resort & Golf Nam Hội An",
+        "stars": 5,
+        "address": "Đường Thanh Niên, Xã Bình Minh, Thăng Bình, Quảng Nam",
+        "city": "Hội An",
+        "pricePerNight": 2800000,
+        "description": "Tổ hợp nghỉ dưỡng, sân golf và công viên giải trí VinWonders, phù hợp cho gia đình.",
+        "amenities": [
+            "Sân golf",
+            "VinWonders",
+            "Hồ bơi lớn",
+            "Khu vui chơi trẻ em",
+            "Xe điện nội khu"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_11/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_11/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_11/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_11/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842353779779",
+            "email": "info@vinpearlhoian.com"
+        },
+        "roomsAvailable": 50,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel012",
+        "name": "Banyan Tree Lang Co",
+        "stars": 5,
+        "address": "Làng Cò, Lộc Vĩnh, Phú Lộc, Thừa Thiên Huế",
+        "city": "Huế",
+        "pricePerNight": 4500000,
+        "description": "Biệt thự sang trọng với hồ bơi riêng, nằm tại một trong những vịnh đẹp nhất miền Trung.",
+        "amenities": [
+            "Biệt thự hồ bơi riêng",
+            "Spa đạt giải thưởng",
+            "Sân golf",
+            "Thể thao dưới nước",
+            "Lớp học nấu ăn"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_12/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_12/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_12/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_12/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842343695888",
+            "email": "langco@banyantree.com"
+        },
+        "roomsAvailable": 15,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel013",
+        "name": "Azerai Can Tho",
+        "stars": 5,
+        "address": "Cồn Ấu, Cái Răng, Cần Thơ",
+        "city": "Cần Thơ",
+        "pricePerNight": 3000000,
+        "description": "Khu nghỉ dưỡng biệt lập trên một cù lao riêng, mang đến trải nghiệm sông nước miền Tây yên bình.",
+        "amenities": [
+            "Hồ bơi",
+            "Spa",
+            "Lớp học nấu ăn địa phương",
+            "Thuyền tham quan chợ nổi",
+            "Yoga"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_13/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_13/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_13/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_13/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842923627888",
+            "email": "res@azeraicantho.com"
+        },
+        "roomsAvailable": 10,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel014",
+        "name": "Anantara Mui Ne Resort",
+        "stars": 5,
+        "address": "12A Nguyễn Đình Chiểu, Mũi Né, Phan Thiết",
+        "city": "Phan Thiết",
+        "pricePerNight": 2600000,
+        "description": "Khu nghỉ dưỡng cao cấp với kiến trúc truyền thống Việt Nam, nằm dọc bờ biển Mũi Né.",
+        "amenities": [
+            "Hồ bơi vô cực",
+            "Spa",
+            "Thể thao dưới nước (Kitesurfing)",
+            "Lớp học nấu ăn",
+            "Kids club"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_14/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_14/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_14/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_14/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842523741888",
+            "email": "muine@anantara.com"
+        },
+        "roomsAvailable": 28,
+        "class": "hotels"
+    },
+    {
+        "ProductId": "hotel015",
+        "name": "Hotel de l'Opera Hanoi - MGallery",
+        "stars": 5,
+        "address": "29 Tràng Tiền, Hoàn Kiếm, Hà Nội",
+        "city": "Hà Nội",
+        "pricePerNight": 2900000,
+        "description": "Khách sạn lấy cảm hứng từ Nhà hát Lớn Hà Nội, mang đến không gian cổ điển và sang trọng.",
+        "amenities": [
+            "Hồ bơi trong nhà",
+            "Nhà hàng Pháp",
+            "Phòng gym",
+            "Dịch vụ đưa đón",
+            "Bar/Lounge"
+        ],
+        "images": [
+            "./Images/products/Image/Services/Hotels/hotel_15/hotel_1.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_15/hotel_2.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_15/hotel_3.jpg",
+            "./Images/products/Image/Services/Hotels/hotel_15/hotel_4.jpg"
+        ],
+        "contact": {
+            "phone": "+842438285555",
+            "email": "h7832@accor.com"
+        },
+        "roomsAvailable": 32,
+        "class": "hotels"
+    }
+]
