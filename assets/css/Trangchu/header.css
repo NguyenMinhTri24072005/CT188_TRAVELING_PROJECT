@@ -1,0 +1,151 @@
+/* Reset layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --primary-color: #296089;
+  --secondary-color:#F0DD77;
+  --third-color:#96D0CD;
+  --four-color: #F7D77A;
+
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px 0;
+  padding-bottom: 42px;
+  z-index: 900;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+.menu-item a:hover {
+  background-color: var(--third-color);
+  color: white;
+}
+.logo img {
+  width: 200px;
+}
+
+
+
+.flag-icon {
+  height: 13px;
+  margin-right: 5px;
+}
+
+
+
+
+.btn-login,
+.btn-signup,
+.btn-cart {
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.lang-currency {
+  padding: 8px 12px;
+}
+.lang-currency:hover {
+  border-radius: 6px;
+  background-color: var(--third-color);
+  color: white;
+}
+.btn-login {
+  padding: 10px 10px;
+  background: white;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-signup {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+/* .btn-cart {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+} */
+
+/* Navigation menu dưới */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: grey;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: white;
+   margin-top: 60px; 
+  border-bottom: 1px solid grey;
+  z-index:999;
+  padding-top: 10px;
+  /* box-shadow: 0 3px 3px rgba(151, 151, 151, 0.3); */
+}
+.hotlinee{
+  padding-bottom: 10px;
+}
+.hotlinee_number{
+  color: red;
+  font-weight: 600;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+.nav-items1 {
+  cursor: pointer;
+  color: grey;
+  padding-bottom: 10px;
+}
+.nav-items1 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 555;
+}
+.nav-items1 a:hover {
+  color: var(--primary-color);
+}
+
+
+
+
+
