@@ -1,0 +1,244 @@
+/* CHUNG TẤN LỢI ** B236555 */
+.main__contact{
+    display: grid;
+    grid-template-areas: "main-header" "main-form";
+}
+.main__header{
+    grid-area: main-header;
+}
+.main__form{
+    grid-area: main-form;
+}
+.main__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+   
+}
+.contact__decs{
+    text-align: center;
+   
+}
+.main__form{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    grid-template-areas: "form-left form-right";
+
+}
+
+.contact-branches{
+}
+.row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.field{
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.field.full {
+  flex: 100%;
+}
+label {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+input, textarea {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.submit-btn {
+  background: #2a658f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+.submit-btn:hover {
+  background: #1c4a6b;
+}
+
+.contact-branches {
+  padding: 10px;
+  border-radius: 4px;
+}
+.contact-branches h2 {
+  text-align: center;
+}
+.branch {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.branch:last-child {
+  border-bottom: none;
+}
+.branch h3 {
+  margin: 0;
+}
+.branch p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+.text-nd{
+    width: 740px;
+    height: 228px;
+}
+.contact__form-h2{
+    align-items: center;
+    margin-bottom: 50px;
+}
+.input2{
+    width: 740px;
+}
+.text{
+    width: 225px;
+}
+.contact__form{
+    padding-left: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__form{
+    margin-top: 100px;
+
+}
+.main__contact {
+    display: grid;
+    grid-template-areas: "main-header" "main-form";
+  
+}
+
+.main__header {
+    grid-area: main-header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.contact__decs {
+    text-align: center;
+}
+
+.main__form {
+    grid-area: main-form;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    grid-template-areas: "form-left form-right";
+    margin-top: 100px;
+}
+.field{
+
+}
+.tick{
+    width: 70px;
+    height: 70px;
+}
+.thanks__box,.login-fail__box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+.thanks__content{
+    margin: 10px;
+    text-align: center;
+}
+.thanks__button,.login-fail__button{
+     background: #2a658f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.contact__form {
+    grid-area: form-left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      background-color: #fff;
+    border:  1px solid #000 ;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.error-msg {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.field select{
+    width: 50%;
+    height: 30px;
+}
+.hienthi{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit_ad{
+  background: #2ea8ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin-top: 10px;
+  width: 15%;
+}
+@media (max-width: 1200px) {
+    .main__header {
+        padding: 0 100px;
+    }
+
+    .main__form {
+        grid-template-columns: 1fr;
+        grid-template-areas: "form-left" "form-right";
+    }
+
+    .text-nd, .input2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__header {
+        padding: 0 20px;
+    }
+
+    .text-nd, .input2,.field{
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
