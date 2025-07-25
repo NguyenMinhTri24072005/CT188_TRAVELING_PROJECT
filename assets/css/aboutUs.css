@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 :root {
   --primary-color: #296089;
   --primary-color-dark: #1c4565;
@@ -32,18 +31,31 @@ body {
   justify-content: space-between;
 }
 
-
 /* css trang about us */
 .page {
   padding: 2rem auto;
 }
-
 .main-section__container {
   max-width: var(--max-width);
   margin: auto;
   padding: 3rem 1rem;
 }
 
+/* .section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+} */
+
+/* .section__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 1rem;
+} */
 
 .btn {
   padding: 0.75rem 2rem;
@@ -84,13 +96,14 @@ body {
 .header__container {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding-bottom: 1rem;
 }
 
 .header__image {
   position: relative;
+  margin-right: 100px;
 }
 
 .header__image img {
@@ -100,6 +113,7 @@ body {
   border: 0.5rem solid #fff;
   border-radius: 2rem;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .header__image img:nth-child(1) {
@@ -118,7 +132,7 @@ body {
   justify-content: center;
 }
 
-.header__content>div {
+.header__content > div {
   max-width: 400px;
   display: grid;
   gap: 1rem;
@@ -178,7 +192,7 @@ body {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
-.story>span {
+.story > span {
   font-size: 1rem;
   font-weight: 600;
   color: var(--primary-color-dark);
@@ -223,7 +237,6 @@ body {
     }
   }
 }
-
 .content-container {
   flex: 1 1 30rem;
   margin-bottom: 2rem;
@@ -369,7 +382,6 @@ body {
 .review__content .heading-container {
   margin-bottom: 0;
 }
-
 .review__image img {
   max-width: 400px;
   margin-inline: auto;
@@ -384,7 +396,7 @@ body {
   margin-top: 0;
 }
 
-.review__card>span {
+.review__card > span {
   display: inline-block;
   font-size: 5rem;
   color: var(--primary-color);
@@ -410,13 +422,13 @@ body {
   color: var(--primary-color);
 }
 
-.review__card>div {
+.review__card > div {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
-.review__card>div>span {
+.review__card > div > span {
   font-size: 1rem;
   color: goldenrod;
 }
