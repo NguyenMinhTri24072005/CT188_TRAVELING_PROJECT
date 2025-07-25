@@ -124,7 +124,7 @@ function signin(event) {
     window.location.href = "homePage.html";
 
   } else {
-    alert("Sai tên đăng nhập hoặc mật khẩu!");
+    alert("Sai mật khẩu!");
     passwordInput.classList.add("invalid");
     passwordInput.classList.remove("valid");
   }
