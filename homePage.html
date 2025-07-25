@@ -1,802 +1,995 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>WEB_PROJECT</title>
+    <style>
+      .swiper {
+        width: 100%;
+        max-width: 1140px;
+        height: auto;
+        margin: auto;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/base.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <title>WEB_PROJECT</title>
-</head>
+      @media screen and (max-width: 480px) {
+        .swiper2 {
+          width: 300px !important;
+        }
+      }
 
-<body>
-  <div class="header">
-    <div class="container head">
-      <div class="logo">
-        <a href="homePage.html"><img src="./Images/header-footer/tour1.png" alt="chỗ để logo" /></a>
-      </div>
-      <div class="nav-items">
-        <div class="menu-item">
-          <a href="aboutUs.html">Giới thiệu</a>
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+      }
+
+      .swiper-slide .img_summer {
+        height: 250px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        position: relative;
+      }
+
+      /* Text địa danh nằm trên vùng xám */
+      .swiper-slide .text_summer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+        padding: 20px 15px 15px 15px;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.85) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        border-radius: 10px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        /* Bo tròn */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+      }
+
+      /* Hover nút bấm */
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      /* Xoá viền mũi tên mặc định của Swiper */
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container head">
+        <div class="logo">
+          <a href="homePage.html"
+            ><img src="./Images/header-footer/tour1.png" alt="chỗ để logo"
+          /></a>
         </div>
-        <div class="menu-item">
-          <a href="customerCare.html">Liên hệ</a>
+        <div class="nav-items">
+          <div class="menu-item">
+            <a href="aboutUs.html">Giới thiệu</a>
+          </div>
+          <div class="menu-item">
+            <a href="customerCare.html">Liên hệ</a>
+          </div>
+          <div class="menu-item">
+            <a href="cart.html">Đặt chỗ của tôi</a>
+          </div>
+          <a href="logIn.html" class="btn-login">
+            <img
+              src="./Images/header-footer/user-removebg-preview.png"
+              alt=""
+              style="width: 10px"
+            />
+            Đăng nhập
+          </a>
+          <a href="logUp.html" class="btn-signup">Đăng kí</a>
         </div>
-        <div class="menu-item">
-          <a href="cart.html">Đặt chỗ của tôi</a>
-        </div>
-        <a href="logIn.html" class="btn-login">
-          <img src="./Images/header-footer/user-removebg-preview.png" alt="" style="width: 10px" />
-          Đăng nhập
-        </a>
-        <a href="logUp.html" class="btn-signup">Đăng kí</a>
       </div>
     </div>
-  </div>
 
-  <div class="nav">
-        <div class="container">
-            <ul class="nav-list">
-                <li class="nav-items1">
-                    <a href="tours-page.html">Tour</a>
-                </li>
-                <li class="nav-items1">
-                    <a href="hotels.html">Khách sạn</a>
-                </li>
-                <li class="nav-items1">
-                    <a href="planeTickets.html">Vé máy bay</a>
-                </li>
-                <li class="nav-items1">
-                    <a href="shuttle.html">Đưa đón sân bay</a>
-                </li>
-                <li class="nav-items1">
-                    <a href="busTickets.html">Vé xe khách</a>
-                </li>
-                <li class="nav-items1">
-                    <a href="rentalCars.html">Cho thuê xe</a>
-                </li>
-            </ul>
-            <p class="hotlinee">
-                Hotline: <span class="hotlinee_number">1999 9999 99</span>
-            </p>
-        </div>
-    </div>
-
-  <main>
-    <!-- phần banner -->
-    <div class="banner">
-      <img src="./Images/homePage/tour_banner.png" alt="" />
-    </div>
-    <!-- Phần box tìm kiếm -->
-    <form action="">
-      <div class="search-box">
-        <p class="search-title">Bạn muốn đi đâu ?</p>
-        <div class="search-inner">
-          <input type="text" id="searchInput" placeholder="Nhập vào đây..." />
-          <button class="search-btn" onclick="submitSearch()">Tìm</button>
-        </div>
-      </div>
-    </form>
-    <!-- Phần box tìm kiếm -->
-    <!-- phần logo -->
-    <section class="logo-section">
-      <div class="logo-item">
-        <img src="./Images/homePage/sale.png" alt="" />
-        <div class="label_logo-item">Ưu đãi hè</div>
-      </div>
-      <div class="logo-item">
-        <img src="./Images/homePage/firework.png" alt="" />
-        <div class="label_logo-item">Tour lễ</div>
-      </div>
-      <div class="logo-item">
-        <img src="./Images/homePage/vietnam (1).png" alt="" />
-        <div class="label_logo-item">Tour trong nước</div>
-      </div>
-      <div class="logo-item">
-        <img src="./Images/homePage/destination.png" alt="" />
-        <div class="label_logo-item">Tour nước ngoài</div>
-      </div>
-      <div class="logo-item">
-        <img src="./Images/homePage/crown.png" alt="" />
-        <div class="label_logo-item">Tour cao cấp</div>
-      </div>
-      <div class="logo-item">
-        <img src="./Images/homePage/hotel.png" alt="" />
-        <div class="label_logo-item">Khách sạn</div>
-      </div>
-      <div class="logo-item">
-        <img src="./Images/homePage/plane.png" alt="" />
-        <div class="label_logo-item">Vé máy bay</div>
-      </div>
-    </section>
-
-    <!-- phần logo -->
-
-
-    <section class="swiper_part">
+    <div class="nav">
       <div class="container">
-        <div class="swiper swiper1">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./Images/homePage/1.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./Images/homePage/2.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./Images/homePage/3.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./Images/homePage/4.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./Images/homePage/5.png" alt="" />
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="diemden uudai">
-      <div>
-        <div class="container muahe">
-          <h1 class="section1-title muahe">Ưu đãi giờ chót</h1>
-          <p class="subtitle1">
-            Nhanh tay nắm bắt cơ hội giảm giá cuối cùng. Đặt ngay để không bỏ lỡ!
-          </p>
-        </div>
-        <div class="swiper_part">
-          <div class="container">
-            <div class="swiper swiper2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide swiper2">
-                  <div class="tour-card-container">
-                    <div class="tour-card">
-                      <div class="card-face">
-                        <div class="tour-image">
-                          <div class="countdown">09:09:09</div>
-                          <img src="./Images/homePage/drive-download-20250723T104242Z-1-001/DaLat.webp" alt="" />
-                        </div>
-                        <div class="tour-content">
-                          <div class="tour-title">Đà Lạt</div>
-                          <div class="price-section">
-                            <div class="price">
-                              <label for="">Giá chỉ từ:</label>
-                              <span class="old-price">6.666.666d</span>
-                              <div class="new-price">5.555.555đ</div>
-                            </div>
-                            <div class="seats-left">Số chỗ còn: 9</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-face card-back">
-                        <div class="back-header">
-                          <div class="back-title">Đà Lạt</div>
-                        </div>
-                        <div class="detail-content">
-                          <div class="detail-row">
-                            <span class="detail-label">Mã tour</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Địa điểm khởi hành</span>
-                            <span class="detail-value">TPHCM</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Ngày khởi hành</span>
-                            <span class="detail-value">09/06/2005</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Khách sạn</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Phương tiện</span>
-                            <span class="detail-value">Máy bay</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Thời gian tour</span>
-                            <span class="detail-value">3 ngày 2 đêm</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Giá chỉ từ:</span>
-                            <span class="detail-value" style="color: #e74c3c; font-weight: bold">5.555.555đ</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Số chỗ còn:</span>
-                            <span class="detail-value" style="color: #3498db; font-weight: bold">9</span>
-                          </div>
-                        </div>
-                        <button class="book-button">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide swiper2">
-                  <div class="tour-card-container">
-                    <div class="tour-card">
-                      <div class="card-face">
-                        <div class="tour-image">
-                          <div class="countdown">09:09:09</div>
-                          <img src="./Images/homePage/drive-download-20250723T104242Z-1-001/DaNang.jpeg" alt="" />
-                        </div>
-                        <div class="tour-content">
-                          <div class="tour-title">Đà Nẵng</div>
-                          <div class="price-section">
-                            <div class="price">
-                              <label for="">Giá chỉ từ:</label>
-                              <span class="old-price">6.666.666d</span>
-                              <div class="new-price">5.555.555đ</div>
-                            </div>
-                            <div class="seats-left">Số chỗ còn: 8</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-face card-back">
-                        <div class="back-header">
-                          <div class="back-title">Đà Nẵng</div>
-                        </div>
-                        <div class="detail-content">
-                          <div class="detail-row">
-                            <span class="detail-label">Mã tour</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Địa điểm khởi hành</span>
-                            <span class="detail-value">TPHCM</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Ngày khởi hành</span>
-                            <span class="detail-value">09/06/2005</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Khách sạn</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Phương tiện</span>
-                            <span class="detail-value">Máy bay</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Thời gian tour</span>
-                            <span class="detail-value">3 ngày 2 đêm</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Giá chỉ từ:</span>
-                            <span class="detail-value" style="color: #e74c3c; font-weight: bold">5.555.555đ</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Số chỗ còn:</span>
-                            <span class="detail-value" style="color: #3498db; font-weight: bold">8</span>
-                          </div>
-                        </div>
-                        <button class="book-button">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide swiper2">
-                  <div class="tour-card-container">
-                    <div class="tour-card">
-                      <div class="card-face">
-                        <div class="tour-image">
-                          <div class="countdown">09:09:09</div>
-                          <img src="./Images/homePage/drive-download-20250723T104242Z-1-001/NhaTrang.jpg" alt="" />
-                        </div>
-                        <div class="tour-content">
-                          <div class="tour-title">Nha Trang</div>
-                          <div class="price-section">
-                            <div class="price">
-                              <label for="">Giá chỉ từ:</label>
-                              <span class="old-price">6.666.666d</span>
-                              <div class="new-price">5.555.555đ</div>
-                            </div>
-                            <div class="seats-left">Số chỗ còn: 9</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-face card-back">
-                        <div class="back-header">
-                          <div class="back-title">Nha Trang</div>
-                        </div>
-                        <div class="detail-content">
-                          <div class="detail-row">
-                            <span class="detail-label">Mã tour</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Địa điểm khởi hành</span>
-                            <span class="detail-value">TPHCM</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Ngày khởi hành</span>
-                            <span class="detail-value">09/06/2005</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Khách sạn</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Phương tiện</span>
-                            <span class="detail-value">Máy bay</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Thời gian tour</span>
-                            <span class="detail-value">3 ngày 2 đêm</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Giá chỉ từ:</span>
-                            <span class="detail-value" style="color: #e74c3c; font-weight: bold">5.555.555đ</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Số chỗ còn:</span>
-                            <span class="detail-value" style="color: #3498db; font-weight: bold">9</span>
-                          </div>
-                        </div>
-                        <button class="book-button">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide swiper2">
-                  <div class="tour-card-container">
-                    <div class="tour-card">
-                      <div class="card-face">
-                        <div class="tour-image">
-                          <div class="countdown">09:09:09</div>
-                          <img src="./Images/homePage/drive-download-20250723T104242Z-1-001/PhuQuoc.jpg" alt="" />
-                        </div>
-                        <div class="tour-content">
-                          <div class="tour-title">Phú Quốc</div>
-                          <div class="price-section">
-                            <div class="price">
-                              <label for="">Giá chỉ từ:</label>
-                              <span class="old-price">6.666.666d</span>
-                              <div class="new-price">5.555.555đ</div>
-                            </div>
-                            <div class="seats-left">Số chỗ còn: 9</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-face card-back">
-                        <div class="back-header">
-                          <div class="back-title">Phú Quốc</div>
-                        </div>
-                        <div class="detail-content">
-                          <div class="detail-row">
-                            <span class="detail-label">Mã tour</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Địa điểm khởi hành</span>
-                            <span class="detail-value">TPHCM</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Ngày khởi hành</span>
-                            <span class="detail-value">09/06/2005</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Khách sạn</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Phương tiện</span>
-                            <span class="detail-value">Máy bay</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Thời gian tour</span>
-                            <span class="detail-value">3 ngày 2 đêm</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Giá chỉ từ:</span>
-                            <span class="detail-value" style="color: #e74c3c; font-weight: bold">5.555.555đ</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Số chỗ còn:</span>
-                            <span class="detail-value" style="color: #3498db; font-weight: bold">9</span>
-                          </div>
-                        </div>
-                        <button class="book-button">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide swiper2">
-                  <div class="tour-card-container">
-                    <div class="tour-card">
-                      <div class="card-face">
-                        <div class="tour-image">
-                          <div class="countdown">09:09:09</div>
-                          <img src="./Images/homePage/drive-download-20250723T104242Z-1-001/Sapa.jpg" alt="" />
-                        </div>
-                        <div class="tour-content">
-                          <div class="tour-title">Sapa</div>
-                          <div class="price-section">
-                            <div class="price">
-                              <label for="">Giá chỉ từ:</label>
-                              <span class="old-price">6.666.666d</span>
-                              <div class="new-price">5.555.555đ</div>
-                            </div>
-                            <div class="seats-left">Số chỗ còn: 9</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-face card-back">
-                        <div class="back-header">
-                          <div class="back-title">Sapa</div>
-                        </div>
-                        <div class="detail-content">
-                          <div class="detail-row">
-                            <span class="detail-label">Mã tour</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Địa điểm khởi hành</span>
-                            <span class="detail-value">TPHCM</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Ngày khởi hành</span>
-                            <span class="detail-value">09/06/2005</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Khách sạn</span>
-                            <span class="detail-value">abc</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Phương tiện</span>
-                            <span class="detail-value">Máy bay</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Thời gian tour</span>
-                            <span class="detail-value">3 ngày 2 đêm</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Giá chỉ từ:</span>
-                            <span class="detail-value" style="color: #e74c3c; font-weight: bold">5.555.555đ</span>
-                          </div>
-                          <div class="detail-row">
-                            <span class="detail-label">Số chỗ còn:</span>
-                            <span class="detail-value" style="color: #3498db; font-weight: bold">9</span>
-                          </div>
-                        </div>
-                        <button class="book-button">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <section>
-        <h1 class="section-title">Điểm Đến Yêu Thích</h1>
-        <p class="subtitle">
-          Hãy chọn một điểm đến du lịch nổi tiếng dưới đây để khám phá các
-          chuyến đi độc quyền của chúng tôi với mức giá vô cùng hợp lý.
+        <ul class="nav-list">
+          <li class="nav-items1">
+            <a href="tours-page.html">Tour</a>
+          </li>
+          <li class="nav-items1">
+            <a href="hotels.html">Khách sạn</a>
+          </li>
+          <li class="nav-items1">
+            <a href="planeTickets.html">Vé máy bay</a>
+          </li>
+          <li class="nav-items1">
+            <a href="shuttle.html">Đưa đón sân bay</a>
+          </li>
+          <li class="nav-items1">
+            <a href="busTickets.html">Vé xe khách</a>
+          </li>
+          <li class="nav-items1">
+            <a href="rentalCars.html">Cho thuê xe</a>
+          </li>
+        </ul>
+        <p class="hotlinee">
+          Hotline: <span class="hotlinee_number">1999 9999 99</span>
         </p>
-        <nav class="navigation">
-          <div class="nav-item active" data-region="mien-bac">Trong nước</div>
-          <div class="nav-item" data-region="chau-a">Châu Á</div>
-          <div class="nav-item" data-region="chau-au">Châu Âu</div>
-          <div class="nav-item" data-region="chau-my">Châu Mỹ</div>
-          <div class="nav-item" data-region="chau-uc">Châu Úc</div>
-          <div class="nav-item" data-region="chau-phi">Châu Phi</div>
-        </nav>
-        <div class="gallery" id="gallery">
-          <!-- Nội dung sẽ được thay đổi dynamically -->
+      </div>
+    </div>
+
+    <main>
+      <!-- phần banner -->
+      <div class="banner">
+        <img src="./Images/homePage/tour_banner.png" alt="" />
+      </div>
+      <!-- Phần box tìm kiếm -->
+      <form action="">
+        <div class="search-box">
+          <p class="search-title">Bạn muốn đi đâu ?</p>
+          <div class="search-inner">
+            <input type="text" id="searchInput" placeholder="Nhập vào đây..." />
+            <button class="search-btn" onclick="submitSearch()">Tìm</button>
+          </div>
+        </div>
+      </form>
+      <!-- Phần box tìm kiếm -->
+      <!-- phần logo -->
+      <section class="logo-section">
+        <div class="logo-item">
+          <img src="./Images/homePage/sale.png" alt="" />
+          <div class="label_logo-item">Ưu đãi hè</div>
+        </div>
+        <div class="logo-item">
+          <img src="./Images/homePage/firework.png" alt="" />
+          <div class="label_logo-item">Tour lễ</div>
+        </div>
+        <div class="logo-item">
+          <img src="./Images/homePage/vietnam (1).png" alt="" />
+          <div class="label_logo-item">Tour trong nước</div>
+        </div>
+        <div class="logo-item">
+          <img src="./Images/homePage/destination.png" alt="" />
+          <div class="label_logo-item">Tour nước ngoài</div>
+        </div>
+        <div class="logo-item">
+          <img src="./Images/homePage/crown.png" alt="" />
+          <div class="label_logo-item">Tour cao cấp</div>
+        </div>
+        <div class="logo-item">
+          <img src="./Images/homePage/hotel.png" alt="" />
+          <div class="label_logo-item">Khách sạn</div>
+        </div>
+        <div class="logo-item">
+          <img src="./Images/homePage/plane.png" alt="" />
+          <div class="label_logo-item">Vé máy bay</div>
         </div>
       </section>
-    </div>
 
-    <!-- Phần gợi ý điểm đến -->
-    <section class="diemden">
-      <div>
-        <div class="container muahe">
-          <h1 class="section1-title">Gợi ý điểm đến mùa hè</h1>
-          <p class="subtitle1">
-            Mùa hè, mùa của những sự oi bức, nóng nực. Nhưng cũng vì thế mà
-            các tour mùa hè không bao giờ hạ nhiệt. Trải nghiệm du lịch mùa hè
-            cùng chúng tôi để có một kì nghỉ bùng cháy nào.
-          </p>
-        </div>
-        <div class="swiper_part">
-          <div class="container">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="https://images.unsplash.com/photo-1621094305060-081171d1c171?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" class="img_summer" />
-                  <div class="text_summer">Phú Quốc</div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://images.unsplash.com/photo-1552310065-aad9ebece999?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" class="img_summer" />
-                  <div class="text_summer">Đà Lạt</div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" class="img_summer" />
-                  <div class="text_summer">Bali-Indonesia</div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" class="img_summer" />
-                  <div class="text_summer">Jeju-Hàn Quốc</div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" class="img_summer" />
-                  <div class="text_summer">Paris-Pháp</div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" class="img_summer" />
-                  <div class="text_summer">Santorini-Ý</div>
-                </div>
+      <!-- phần logo -->
+
+      <section class="swiper_part">
+        <div class="container">
+          <div class="swiper swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./Images/homePage/1.png" alt="" />
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-slide">
+                <img src="./Images/homePage/2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./Images/homePage/3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./Images/homePage/4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./Images/homePage/5.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="diemden uudai">
+        <div>
+          <div class="container muahe">
+            <h1 class="section1-title muahe">Ưu đãi giờ chót</h1>
+            <p class="subtitle1">
+              Nhanh tay nắm bắt cơ hội giảm giá cuối cùng. Đặt ngay để không bỏ
+              lỡ!
+            </p>
+          </div>
+          <div class="swiper_part">
+            <div class="container">
+              <div class="swiper swiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper2">
+                    <div class="tour-card-container">
+                      <div class="tour-card">
+                        <div class="card-face">
+                          <div class="tour-image">
+                            <div class="countdown">09:09:09</div>
+                            <img
+                              src="./Images/homePage/drive-download-20250723T104242Z-1-001/DaLat.webp"
+                              alt=""
+                            />
+                          </div>
+                          <div class="tour-content">
+                            <div class="tour-title">Đà Lạt</div>
+                            <div class="price-section">
+                              <div class="price">
+                                <label for="">Giá chỉ từ:</label>
+                                <span class="old-price">6.666.666d</span>
+                                <div class="new-price">5.555.555đ</div>
+                              </div>
+                              <div class="seats-left">Số chỗ còn: 9</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-face card-back">
+                          <div class="back-header">
+                            <div class="back-title">Đà Lạt</div>
+                          </div>
+                          <div class="detail-content">
+                            <div class="detail-row">
+                              <span class="detail-label">Mã tour</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label"
+                                >Địa điểm khởi hành</span
+                              >
+                              <span class="detail-value">TPHCM</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Ngày khởi hành</span>
+                              <span class="detail-value">09/06/2005</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Khách sạn</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Phương tiện</span>
+                              <span class="detail-value">Máy bay</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Thời gian tour</span>
+                              <span class="detail-value">3 ngày 2 đêm</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Giá chỉ từ:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #e74c3c; font-weight: bold"
+                                >5.555.555đ</span
+                              >
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Số chỗ còn:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #3498db; font-weight: bold"
+                                >9</span
+                              >
+                            </div>
+                          </div>
+                          <button class="book-button">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide swiper2">
+                    <div class="tour-card-container">
+                      <div class="tour-card">
+                        <div class="card-face">
+                          <div class="tour-image">
+                            <div class="countdown">09:09:09</div>
+                            <img
+                              src="./Images/homePage/drive-download-20250723T104242Z-1-001/DaNang.jpeg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="tour-content">
+                            <div class="tour-title">Đà Nẵng</div>
+                            <div class="price-section">
+                              <div class="price">
+                                <label for="">Giá chỉ từ:</label>
+                                <span class="old-price">6.666.666d</span>
+                                <div class="new-price">5.555.555đ</div>
+                              </div>
+                              <div class="seats-left">Số chỗ còn: 8</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-face card-back">
+                          <div class="back-header">
+                            <div class="back-title">Đà Nẵng</div>
+                          </div>
+                          <div class="detail-content">
+                            <div class="detail-row">
+                              <span class="detail-label">Mã tour</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label"
+                                >Địa điểm khởi hành</span
+                              >
+                              <span class="detail-value">TPHCM</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Ngày khởi hành</span>
+                              <span class="detail-value">09/06/2005</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Khách sạn</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Phương tiện</span>
+                              <span class="detail-value">Máy bay</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Thời gian tour</span>
+                              <span class="detail-value">3 ngày 2 đêm</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Giá chỉ từ:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #e74c3c; font-weight: bold"
+                                >5.555.555đ</span
+                              >
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Số chỗ còn:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #3498db; font-weight: bold"
+                                >8</span
+                              >
+                            </div>
+                          </div>
+                          <button class="book-button">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper2">
+                    <div class="tour-card-container">
+                      <div class="tour-card">
+                        <div class="card-face">
+                          <div class="tour-image">
+                            <div class="countdown">09:09:09</div>
+                            <img
+                              src="./Images/homePage/drive-download-20250723T104242Z-1-001/NhaTrang.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="tour-content">
+                            <div class="tour-title">Nha Trang</div>
+                            <div class="price-section">
+                              <div class="price">
+                                <label for="">Giá chỉ từ:</label>
+                                <span class="old-price">6.666.666d</span>
+                                <div class="new-price">5.555.555đ</div>
+                              </div>
+                              <div class="seats-left">Số chỗ còn: 9</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-face card-back">
+                          <div class="back-header">
+                            <div class="back-title">Nha Trang</div>
+                          </div>
+                          <div class="detail-content">
+                            <div class="detail-row">
+                              <span class="detail-label">Mã tour</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label"
+                                >Địa điểm khởi hành</span
+                              >
+                              <span class="detail-value">TPHCM</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Ngày khởi hành</span>
+                              <span class="detail-value">09/06/2005</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Khách sạn</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Phương tiện</span>
+                              <span class="detail-value">Máy bay</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Thời gian tour</span>
+                              <span class="detail-value">3 ngày 2 đêm</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Giá chỉ từ:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #e74c3c; font-weight: bold"
+                                >5.555.555đ</span
+                              >
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Số chỗ còn:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #3498db; font-weight: bold"
+                                >9</span
+                              >
+                            </div>
+                          </div>
+                          <button class="book-button">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper2">
+                    <div class="tour-card-container">
+                      <div class="tour-card">
+                        <div class="card-face">
+                          <div class="tour-image">
+                            <div class="countdown">09:09:09</div>
+                            <img
+                              src="./Images/homePage/drive-download-20250723T104242Z-1-001/PhuQuoc.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="tour-content">
+                            <div class="tour-title">Phú Quốc</div>
+                            <div class="price-section">
+                              <div class="price">
+                                <label for="">Giá chỉ từ:</label>
+                                <span class="old-price">6.666.666d</span>
+                                <div class="new-price">5.555.555đ</div>
+                              </div>
+                              <div class="seats-left">Số chỗ còn: 9</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-face card-back">
+                          <div class="back-header">
+                            <div class="back-title">Phú Quốc</div>
+                          </div>
+                          <div class="detail-content">
+                            <div class="detail-row">
+                              <span class="detail-label">Mã tour</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label"
+                                >Địa điểm khởi hành</span
+                              >
+                              <span class="detail-value">TPHCM</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Ngày khởi hành</span>
+                              <span class="detail-value">09/06/2005</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Khách sạn</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Phương tiện</span>
+                              <span class="detail-value">Máy bay</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Thời gian tour</span>
+                              <span class="detail-value">3 ngày 2 đêm</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Giá chỉ từ:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #e74c3c; font-weight: bold"
+                                >5.555.555đ</span
+                              >
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Số chỗ còn:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #3498db; font-weight: bold"
+                                >9</span
+                              >
+                            </div>
+                          </div>
+                          <button class="book-button">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper2">
+                    <div class="tour-card-container">
+                      <div class="tour-card">
+                        <div class="card-face">
+                          <div class="tour-image">
+                            <div class="countdown">09:09:09</div>
+                            <img
+                              src="./Images/homePage/drive-download-20250723T104242Z-1-001/Sapa.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="tour-content">
+                            <div class="tour-title">Sapa</div>
+                            <div class="price-section">
+                              <div class="price">
+                                <label for="">Giá chỉ từ:</label>
+                                <span class="old-price">6.666.666d</span>
+                                <div class="new-price">5.555.555đ</div>
+                              </div>
+                              <div class="seats-left">Số chỗ còn: 9</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-face card-back">
+                          <div class="back-header">
+                            <div class="back-title">Sapa</div>
+                          </div>
+                          <div class="detail-content">
+                            <div class="detail-row">
+                              <span class="detail-label">Mã tour</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label"
+                                >Địa điểm khởi hành</span
+                              >
+                              <span class="detail-value">TPHCM</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Ngày khởi hành</span>
+                              <span class="detail-value">09/06/2005</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Khách sạn</span>
+                              <span class="detail-value">abc</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Phương tiện</span>
+                              <span class="detail-value">Máy bay</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Thời gian tour</span>
+                              <span class="detail-value">3 ngày 2 đêm</span>
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Giá chỉ từ:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #e74c3c; font-weight: bold"
+                                >5.555.555đ</span
+                              >
+                            </div>
+                            <div class="detail-row">
+                              <span class="detail-label">Số chỗ còn:</span>
+                              <span
+                                class="detail-value"
+                                style="color: #3498db; font-weight: bold"
+                                >9</span
+                              >
+                            </div>
+                          </div>
+                          <button class="book-button">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <!-- Lí do chọn -->
-    <section class="why-choose">
-      <h1 class="section-title">Lí do nên chọn chúng tôi</h1>
-      <!-- Dòng 1: Các lý do -->
-      <div class="reason-list">
-        <div class="reason-item">
-          <div class="reason-icon">
-            ̣<img src="./Images/homePage/10.png" alt="" />
+      <div class="container">
+        <section>
+          <h1 class="section-title">Điểm Đến Yêu Thích</h1>
+          <p class="subtitle">
+            Hãy chọn một điểm đến du lịch nổi tiếng dưới đây để khám phá các
+            chuyến đi độc quyền của chúng tôi với mức giá vô cùng hợp lý.
+          </p>
+          <nav class="navigation">
+            <div class="nav-item active" data-region="mien-bac">Trong nước</div>
+            <div class="nav-item" data-region="chau-a">Châu Á</div>
+            <div class="nav-item" data-region="chau-au">Châu Âu</div>
+            <div class="nav-item" data-region="chau-my">Châu Mỹ</div>
+            <div class="nav-item" data-region="chau-uc">Châu Úc</div>
+            <div class="nav-item" data-region="chau-phi">Châu Phi</div>
+          </nav>
+          <div class="gallery" id="gallery">
+            <!-- Nội dung sẽ được thay đổi dynamically -->
           </div>
-          <p>Hơn 10 năm kinh nghiệm</p>
-        </div>
-        <div class="reason-item">
-          <div class="reason-icon">
-            <img src="./Images/homePage/math.png" alt="" />
-          </div>
-          <p>Hơn 100 điểm đến</p>
-        </div>
-        <div class="reason-item">
-          <div class="reason-icon">
-            <img src="./Images/homePage/world-map.png" alt="" />
-          </div>
-          <p>Đối tác toàn cầu</p>
-        </div>
-        <div class="reason-item">
-          <div class="reason-icon">
-            <img src="./Images/homePage/refund.png" alt="" />
-          </div>
-          <p>Cam kết hoàn tiền</p>
-        </div>
-        <div class="reason-item">
-          <div class="reason-icon">
-            <img src="./Images/homePage/support.png" />
-          </div>
-          <p>Hỗ trợ 24/7</p>
-        </div>
+        </section>
       </div>
 
-      <!-- Dòng 2: Đánh giá -->
-      <div class="testimonial-list">
-        <article class="card">
-          <span class="badge">Hot</span>
-          <img src="../Web_du_lich/Images/homePage/HieuThu2.jpg" alt="The Art of Intelligence" />
-          <div class="card-content">
-            <h3 class="card-title">
-              "
-              <br />
-              Tour làm ăn uy tín, <br />
-              đáng tin cậy
-            </h3>
-            <p class="card-duration">Rapper Hiếu Thứ Hai</p>
+      <!-- Phần gợi ý điểm đến -->
+      <section class="diemden">
+        <div>
+          <div class="container muahe">
+            <h1 class="section1-title">Gợi ý điểm đến mùa hè</h1>
+            <p class="subtitle1">
+              Mùa hè, mùa của những sự oi bức, nóng nực. Nhưng cũng vì thế mà
+              các tour mùa hè không bao giờ hạ nhiệt. Trải nghiệm du lịch mùa hè
+              cùng chúng tôi để có một kì nghỉ bùng cháy nào.
+            </p>
           </div>
-        </article>
-
-        <article class="card">
-          <span class="badge">Hot</span>
-          <img src="./Images/homePage/bichphuong.webp" alt="The Art of Intelligence" />
-          <div class="card-content">
-            <h3 class="card-title">
-              "
-              <br />
-              Trải nghiệm <br />
-              đáng nhớ
-            </h3>
-            <p class="card-duration">Ca sĩ Bích Phương</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="badge">Hot</span>
-          <img src="./Images/homePage/sontung.jpg" alt="The Art of Intelligence" />
-          <div class="card-content">
-            <h3 class="card-title">
-              "
-              <br />
-              Sẽ quay lại nữa
-            </h3>
-            <p class="card-duration">Ca sĩ Sơn Tùng</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Lí do chọn -->
-  </main>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <!-- Cột 1: Logo và Thanh toán -->
-      <div class="footer-section">
-        <div class="logo-section1">
-          <img src="./Images/header-footer/travel1 (2).png" alt="Chỗ để logo" width="150px" />
-        </div>
-        <img src="./Images/header-footer/logoSaleNoti.png" alt="" width="150px" style="padding: 20px 0" />
-        <h3>Chấp nhận thanh toán</h3>
-        <div class="payment-methods">
-          <div class="payment-logo">
-            <img src="./Images/header-footer/123pay.webp" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/JCB.webp" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/mastercard.webp" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/momo.webp" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/MSB.webp" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/shopeePay.webp" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/vnpay.webp" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/Techcombank_logo.png" alt="" />
-          </div>
-          <div class="payment-logo">
-            <img src="./Images/header-footer/verifiedByVisa.webp" alt="" />
+          <div class="swiper_part">
+            <div class="container">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1621094305060-081171d1c171?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="img_summer"
+                    />
+                    <div class="text_summer">Phú Quốc</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1552310065-aad9ebece999?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="img_summer"
+                    />
+                    <div class="text_summer">Đà Lạt</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="img_summer"
+                    />
+                    <div class="text_summer">Bali-Indonesia</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="img_summer"
+                    />
+                    <div class="text_summer">Jeju-Hàn Quốc</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="img_summer"
+                    />
+                    <div class="text_summer">Paris-Pháp</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      class="img_summer"
+                    />
+                    <div class="text_summer">Santorini-Ý</div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <h3>Tải ứng dụng</h3>
-        <div class="app-download">
-          <div>
-            <img src="./Images/header-footer/tải xuống (5).png" alt="" / width="150px">
+      </section>
+
+      <!-- Lí do chọn -->
+      <section class="why-choose">
+        <h1 class="section-title">Lí do nên chọn chúng tôi</h1>
+        <!-- Dòng 1: Các lý do -->
+        <div class="reason-list">
+          <div class="reason-item">
+            <div class="reason-icon">
+              ̣<img src="./Images/homePage/10.png" alt="" />
+            </div>
+            <p>Hơn 10 năm kinh nghiệm</p>
           </div>
-          <div>
-            <img src="./Images/header-footer/tải xuống (6).png" alt="" width="150px" />
+          <div class="reason-item">
+            <div class="reason-icon">
+              <img src="./Images/homePage/math.png" alt="" />
+            </div>
+            <p>Hơn 100 điểm đến</p>
+          </div>
+          <div class="reason-item">
+            <div class="reason-icon">
+              <img src="./Images/homePage/world-map.png" alt="" />
+            </div>
+            <p>Đối tác toàn cầu</p>
+          </div>
+          <div class="reason-item">
+            <div class="reason-icon">
+              <img src="./Images/homePage/refund.png" alt="" />
+            </div>
+            <p>Cam kết hoàn tiền</p>
+          </div>
+          <div class="reason-item">
+            <div class="reason-icon">
+              <img src="./Images/homePage/support.png" />
+            </div>
+            <p>Hỗ trợ 24/7</p>
           </div>
         </div>
-      </div>
 
-      <!-- Cột 2: Du lịch trong nước -->
-      <div class="footer-section">
-        <h3>Du lịch trong nước</h3>
-        <ul>
-          <li><a href="#">Hà Nội</a></li>
-          <li><a href="#">Huế</a></li>
-          <li><a href="#">Hạ Long</a></li>
-          <li><a href="#">Quảng Bình</a></li>
-          <li><a href="#">Đà Nẵng</a></li>
-          <li><a href="#">Quảng Nam</a></li>
-          <li><a href="#">Nha Trang</a></li>
-          <li><a href="#">Phan Thiết</a></li>
-          <li><a href="#">Bà Rịa - Vũng Tàu</a></li>
-          <li><a href="#">Phú Quốc</a></li>
-          <li><a href="#">Cần Thơ</a></li>
-          <li><a href="#">Bắc Kạn</a></li>
-          <li><a href="#">Hà Giang</a></li>
-          <li><a href="#">Quy Nhon</a></li>
-          <li><a href="#">Cần Đào</a></li>
-        </ul>
-      </div>
+        <!-- Dòng 2: Đánh giá -->
+        <div class="testimonial-list">
+          <article class="card">
+            <span class="badge">Hot</span>
+            <img
+              src="./Images/homePage/HieuThu2.jpg"
+              alt="The Art of Intelligence"
+            />
+            <div class="card-content">
+              <h3 class="card-title">
+                "
+                <br />
+                Tour làm ăn uy tín, <br />
+                đáng tin cậy
+              </h3>
+              <p class="card-duration">Rapper Hiếu Thứ Hai</p>
+            </div>
+          </article>
 
-      <!-- Cột 3: Du lịch nước ngoài -->
-      <div class="footer-section">
-        <h3>Du lịch nước ngoài</h3>
-        <ul>
-          <li><a href="#">Trung Quốc</a></li>
-          <li><a href="#">Thái Lan</a></li>
-          <li><a href="#">Malaysia</a></li>
-          <li><a href="#">Singapore</a></li>
-          <li><a href="#">Hàn Quốc</a></li>
-          <li><a href="#">Úc</a></li>
-          <li><a href="#">Mỹ</a></li>
-          <li><a href="#">Nhật Bản</a></li>
-          <li><a href="#">Ấn Độ</a></li>
-          <li><a href="#">Nga</a></li>
-          <li><a href="#">Đài Loan</a></li>
-          <li><a href="#">Maldives</a></li>
-          <li><a href="#">Na Uy</a></li>
-          <li><a href="#">Tây Ban Nha</a></li>
-          <li><a href="#">Hà Lan</a></li>
-          <li><a href="#">Đức</a></li>
-        </ul>
-      </div>
+          <article class="card">
+            <span class="badge">Hot</span>
+            <img
+              src="./Images/homePage/bichphuong.webp"
+              alt="The Art of Intelligence"
+            />
+            <div class="card-content">
+              <h3 class="card-title">
+                "
+                <br />
+                Trải nghiệm <br />
+                đáng nhớ
+              </h3>
+              <p class="card-duration">Ca sĩ Bích Phương</p>
+            </div>
+          </article>
 
-      <!-- Cột 4: Dịch vụ khác -->
-      <div class="footer-section">
-        <h3>Dịch vụ khác</h3>
-        <ul>
-          <li><a href="#">Khách sạn</a></li>
-          <li><a href="#">Vé máy bay</a></li>
-          <li><a href="#">Cho thuê xe</a></li>
-          <li><a href="#">Vé xe khách</a></li>
-        </ul>
-        <h3 style="margin-top: 30px">Liên hệ</h3>
-        <div class="contact-info">
-          <p>Phường Lê Bình, Quận Cái Răng, Thành Phố Cần Thơ</p>
-          <p>Tel. Việt Nam</p>
-          <p>09 9999 9999</p>
-          <p>08 8888 8888</p>
-          <p>abc@gmail.com</p>
+          <article class="card">
+            <span class="badge">Hot</span>
+            <img
+              src="./Images/homePage/sontung.jpg"
+              alt="The Art of Intelligence"
+            />
+            <div class="card-content">
+              <h3 class="card-title">
+                "
+                <br />
+                Sẽ quay lại nữa
+              </h3>
+              <p class="card-duration">Ca sĩ Sơn Tùng</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Lí do chọn -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Cột 1: Logo và Thanh toán -->
+        <div class="footer-section">
+          <div class="logo-section1">
+            <img
+              src="./Images/header-footer/travel1 (2).png"
+              alt="Chỗ để logo"
+              width="150px"
+            />
+          </div>
+          <img
+            src="./Images/header-footer/logoSaleNoti.png"
+            alt=""
+            width="150px"
+            style="padding: 20px 0"
+          />
+          <h3>Chấp nhận thanh toán</h3>
+          <div class="payment-methods">
+            <div class="payment-logo">
+              <img src="./Images/header-footer/123pay.webp" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/JCB.webp" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/mastercard.webp" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/momo.webp" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/MSB.webp" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/shopeePay.webp" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/vnpay.webp" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/Techcombank_logo.png" alt="" />
+            </div>
+            <div class="payment-logo">
+              <img src="./Images/header-footer/verifiedByVisa.webp" alt="" />
+            </div>
+          </div>
+          <h3>Tải ứng dụng</h3>
+          <div class="app-download">
+            <div>
+              <img src="./Images/header-footer/tải xuống (5).png" alt="" /
+              width="150px">
+            </div>
+            <div>
+              <img
+                src="./Images/header-footer/tải xuống (6).png"
+                alt=""
+                width="150px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột 2: Du lịch trong nước -->
+        <div class="footer-section">
+          <h3>Du lịch trong nước</h3>
+          <ul>
+            <li><a href="#">Hà Nội</a></li>
+            <li><a href="#">Huế</a></li>
+            <li><a href="#">Hạ Long</a></li>
+            <li><a href="#">Quảng Bình</a></li>
+            <li><a href="#">Đà Nẵng</a></li>
+            <li><a href="#">Quảng Nam</a></li>
+            <li><a href="#">Nha Trang</a></li>
+            <li><a href="#">Phan Thiết</a></li>
+            <li><a href="#">Bà Rịa - Vũng Tàu</a></li>
+            <li><a href="#">Phú Quốc</a></li>
+            <li><a href="#">Cần Thơ</a></li>
+            <li><a href="#">Bắc Kạn</a></li>
+            <li><a href="#">Hà Giang</a></li>
+            <li><a href="#">Quy Nhon</a></li>
+            <li><a href="#">Cần Đào</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Du lịch nước ngoài -->
+        <div class="footer-section">
+          <h3>Du lịch nước ngoài</h3>
+          <ul>
+            <li><a href="#">Trung Quốc</a></li>
+            <li><a href="#">Thái Lan</a></li>
+            <li><a href="#">Malaysia</a></li>
+            <li><a href="#">Singapore</a></li>
+            <li><a href="#">Hàn Quốc</a></li>
+            <li><a href="#">Úc</a></li>
+            <li><a href="#">Mỹ</a></li>
+            <li><a href="#">Nhật Bản</a></li>
+            <li><a href="#">Ấn Độ</a></li>
+            <li><a href="#">Nga</a></li>
+            <li><a href="#">Đài Loan</a></li>
+            <li><a href="#">Maldives</a></li>
+            <li><a href="#">Na Uy</a></li>
+            <li><a href="#">Tây Ban Nha</a></li>
+            <li><a href="#">Hà Lan</a></li>
+            <li><a href="#">Đức</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Dịch vụ khác -->
+        <div class="footer-section">
+          <h3>Dịch vụ khác</h3>
+          <ul>
+            <li><a href="#">Khách sạn</a></li>
+            <li><a href="#">Vé máy bay</a></li>
+            <li><a href="#">Cho thuê xe</a></li>
+            <li><a href="#">Vé xe khách</a></li>
+          </ul>
+          <h3 style="margin-top: 30px">Liên hệ</h3>
+          <div class="contact-info">
+            <p>Phường Lê Bình, Quận Cái Răng, Thành Phố Cần Thơ</p>
+            <p>Tel. Việt Nam</p>
+            <p>09 9999 9999</p>
+            <p>08 8888 8888</p>
+            <p>abc@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Cột 5: Theo dõi và Thông tin -->
+        <div class="footer-section">
+          <h3>Theo dõi chúng tôi</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-facebook-messenger"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fas fa-phone"></i></a>
+          </div>
+          <h3 style="margin-top: 30px">Thông tin</h3>
+          <ul>
+            <li><a href="#">Trợ giúp</a></li>
+            <li><a href="#">Chính sách và quyền riêng tư</a></li>
+            <li><a href="#">Thỏa thuận sử dụng</a></li>
+            <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
+          </ul>
         </div>
       </div>
 
-      <!-- Cột 5: Theo dõi và Thông tin -->
-      <div class="footer-section">
-        <h3>Theo dõi chúng tôi</h3>
-        <div class="social-links">
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook-messenger"></i></a>
-          <a href="#" class="social-link"><i class="fas fa-phone"></i></a>
-        </div>
-        <h3 style="margin-top: 30px">Thông tin</h3>
-        <ul>
-          <li><a href="#">Trợ giúp</a></li>
-          <li><a href="#">Chính sách và quyền riêng tư</a></li>
-          <li><a href="#">Thỏa thuận sử dụng</a></li>
-          <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>
+          Công ty TNHH abc Việt Nam, Đường Phan Hùng, Phường Lê Bình, Quận Cái
+          Răng, Thành Phố Cần Thơ
+        </p>
+        <p>Copyright © 2025 abc. All rights reserved</p>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>
-        Công ty TNHH abc Việt Nam, Đường Phan Hùng, Phường Lê Bình, Quận Cái
-        Răng, Thành Phố Cần Thơ
-      </p>
-      <p>Copyright © 2025 abc. All rights reserved</p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./assets/js/homePage.js"></script>
-  <script src="./assets/js/profile.js"></script>
-</body>
-
-
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/homePage.js"></script>
+    <script src="./assets/js/profile.js"></script>
+  </body>
 </html>
