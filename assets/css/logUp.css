@@ -7,9 +7,10 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: stretch;
-  margin-top: 15rem;
   width: 80%;
-  margin: 15rem auto 0px;
+   margin-top: 5rem;
+  
+  margin: 10rem auto 0px; 
 }
 
 .left {
